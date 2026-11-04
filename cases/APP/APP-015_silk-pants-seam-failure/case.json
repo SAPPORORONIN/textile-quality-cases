@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-015",
+  "legacyId": null,
+  "title": "可水洗真丝阔腿裤接缝撕裂改进",
+  "summary": "真丝绉缎面料缝纫抗滑移性低，内侧缝在穿着 1-2 次后即出现脱缝甚至面料撕裂；优化缝型、缝份和针距后提高接缝强力。",
+  "domain": "apparel",
+  "product": "可水洗真丝抽绳阔腿裤",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "seam-failure",
+    "seam-slippage"
+  ],
+  "disciplines": [
+    "sewing",
+    "raw-material"
+  ],
+  "tools": [
+    "PDCA",
+    "Fishbone",
+    "PFMEA"
+  ],
+  "standards": [
+    "ASTM-D1683"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "seam-slippage-mm",
+      "before": 9.2,
+      "after": 4.8,
+      "target": 6.0,
+      "headline": true
+    },
+    {
+      "metric": "seam-break-force-N",
+      "before": 45,
+      "after": 88,
+      "target": 67
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": 3.2,
+      "after": 1.1
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-017",
+  "legacyId": null,
+  "title": "华夫格毛毯偏薄——克重与织造密度改善",
+  "summary": "华夫格棉毛毯上市后消费者反馈'太薄了''像纱布一样透光''洗几次就不行了'，薄/脆弱投诉在低分评论中占比突出。根因为面料克重被成本优化削减、华夫格蜂巢深度不足导致立体感差、纱线支数偏高（偏细）使手感单薄。通过恢复克重、加深蜂巢结构、调整纱线规格，薄/脆弱投诉率显著下降。",
+  "domain": "home-textile",
+  "product": "华夫格棉毛毯",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "weight-deficiency"
+  ],
+  "disciplines": [
+    "raw-material",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "5-Why"
+  ],
+  "standards": [
+    "ASTM-D3776"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "thin-complaint-rate",
+      "before": 2.4,
+      "after": 0.5,
+      "target": 0.8,
+      "headline": true,
+      "note": "偏薄/单薄投诉率（薄/脆弱相关负面评论数 / 同期评论总数 × 100%）"
+    },
+    {
+      "metric": "fabric-gsm",
+      "before": 280,
+      "after": 350,
+      "target": 340,
+      "note": "面料克重 g/m2（ASTM D3776）"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

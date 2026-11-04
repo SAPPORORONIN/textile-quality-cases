@@ -68,7 +68,13 @@
     "traceability": "批次追溯",
     "foreign-object": "异物/断针",
     "supplier-governance": "供应商治理",
-    "cost-of-quality": "质量成本"
+    "cost-of-quality": "质量成本",
+    "hand-feel": "手感粗糙/刺痒",
+    "loft-loss": "蓬松度不足/塌陷",
+    "noise": "使用异响",
+    "opacity": "面料遮蔽性/透光",
+    "prickle": "纤维刺痒感",
+    "weight-deficiency": "克重/厚实感不足"
   },
   "disciplines": {
     "design-pdd": "设计与版型",

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-015",
+  "legacyId": null,
+  "title": "羽绒枕芯蓬松度快速塌陷——填充量与结构改善",
+  "summary": "羽绒枕上市后消费者反馈'睡两晚就塌了''完全没有支撑力'，低分评论中蓬松度塌陷为首要投诉。根因为填充量处于规格下限、绒子含量比偏低导致蓬松恢复差、枕芯无内隔断结构致填充物大量迁移沉降。通过提升填充量、收紧绒子含量比下限、增加内隔仓结构，蓬松度相关投诉显著下降。",
+  "domain": "home-textile",
+  "product": "羽绒枕芯",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "loft-loss"
+  ],
+  "disciplines": [
+    "raw-material",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "5-Why"
+  ],
+  "standards": [
+    "IDFB-TEST-RULES"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "loft-complaint-rate",
+      "before": 2.6,
+      "after": 0.7,
+      "target": 1.0,
+      "headline": true,
+      "note": "蓬松度/塌陷投诉率（蓬松度相关负面评论数 / 同期评论总数 × 100%）"
+    },
+    {
+      "metric": "loft-retention-pct",
+      "before": 52,
+      "after": 78,
+      "target": 75,
+      "note": "50 次压缩回弹后蓬松度保持率 %"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

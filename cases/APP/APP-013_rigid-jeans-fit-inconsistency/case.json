@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-013",
+  "legacyId": null,
+  "title": "硬挺牛仔裤版型与尺码一致性改进",
+  "summary": "非弹力牛仔裤因臀腰比和大腿围档差不匹配目标人群，导致尺码相关退货偏高；优化档差和尺码指引后改善合体度。",
+  "domain": "apparel",
+  "product": "硬挺直筒牛仔裤",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "fit"
+  ],
+  "disciplines": [
+    "design-pdd",
+    "sewing"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "A/B Test"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "size-return-rate",
+      "before": 11.2,
+      "after": 7.8,
+      "headline": true
+    },
+    {
+      "metric": "size-exchange-rate",
+      "before": 4.5,
+      "after": 3.1
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

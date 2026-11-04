@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-014",
+  "legacyId": null,
+  "title": "羽绒被芯持续钻绒——面料防绒性与充绒工艺改善",
+  "summary": "羽绒被芯上市后消费者反馈'每天早上枕头和地板上都是羽毛'，钻绒投诉集中且情绪强烈。根因为绒子含量偏低（小羽毛和绒丝占比高）、面料经纬密度处于防绒规格下限、绗缝针孔未做热压密封。通过提升绒子含量下限、收紧面料防绒测试标准、绗缝工艺增加针孔密封步骤，钻绒投诉率大幅下降。",
+  "domain": "home-textile",
+  "product": "羽绒被芯",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "down-leakage"
+  ],
+  "disciplines": [
+    "raw-material",
+    "sewing",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "Fishbone",
+    "Pareto"
+  ],
+  "standards": [
+    "IDFB-TEST-RULES"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "down-leakage-complaint-rate",
+      "before": 1.8,
+      "after": 0.35,
+      "target": 0.5,
+      "headline": true,
+      "note": "钻绒投诉率（钻绒相关负面评论数 / 同期评论总数 × 100%）"
+    },
+    {
+      "metric": "downproof-air-permeability",
+      "before": 1.8,
+      "after": 0.9,
+      "target": 1.0,
+      "note": "面料透气量 cc/s/cm2（IDFB 标准），数值越低防绒性越好"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

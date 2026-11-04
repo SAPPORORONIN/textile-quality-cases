@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-016",
+  "legacyId": null,
+  "title": "轻薄婴驼毛高领衫刺痒感改进",
+  "summary": "标称 Baby Alpaca 纤维直径分布尾端偏粗，叠加高领贴合颈部敏感皮肤，导致消费者反馈刺痒；通过纤维分级筛选和柔软后整理降低刺痒比率。",
+  "domain": "apparel",
+  "product": "轻薄婴驼毛高领衫",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "prickle"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "DOE"
+  ],
+  "standards": ["IWTO-47"],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "prickle-factor-pct",
+      "before": 6.8,
+      "after": 2.1,
+      "target": 3.0,
+      "headline": true
+    },
+    {
+      "metric": "fiber-diameter-cv-pct",
+      "before": 28,
+      "after": 21,
+      "target": 22
+    },
+    {
+      "metric": "itch-return-rate",
+      "before": 2.9,
+      "after": 1.0
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

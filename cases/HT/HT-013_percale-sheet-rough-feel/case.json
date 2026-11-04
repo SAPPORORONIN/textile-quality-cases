@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-013",
+  "legacyId": null,
+  "title": "有机全棉 Percale 平纹床单套装手感粗糙投诉",
+  "summary": "有机全棉 Percale 床单套装上市后持续收到「手感粗糙/扎人/硬挺」消费者反馈（约 34 条负面评论集中提及），Rating 4.51 但低分评论触感占比突出。根因为退浆不完全叠加无生物抛光工序、产品页面未设置 Percale 织物的 break-in 预期。通过优化前处理退浆、增加纤维素酶生物抛光、页面增加使用说明，消费者触感投诉率显著下降。",
+  "domain": "home-textile",
+  "product": "有机全棉 Percale 床单套装",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "hand-feel"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "raw-material",
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "5-Why"
+  ],
+  "standards": [
+    "AATCC-TM202"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "touch-complaint-rate",
+      "before": 0.48,
+      "after": 0.12,
+      "target": 0.15,
+      "headline": true,
+      "note": "触感投诉率（触感相关负面评论数 / 同期评论总数 × 100%）"
+    },
+    {
+      "metric": "hand-feel-score",
+      "before": 2.5,
+      "after": 4.0,
+      "target": 3.5,
+      "note": "Handle-O-Meter 柔软度评分（AATCC TM 202 改良），数值越高越柔软，5 分制"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

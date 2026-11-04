@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-016",
+  "legacyId": null,
+  "title": "床垫护垫防水层异响——TPU 膜柔软化与复合工艺改善",
+  "summary": "防水床垫护垫上市后消费者反馈'翻身像躺在尿布上''沙沙响严重影响睡眠'，噪音投诉集中且退货意愿强。根因为 TPU 防水膜厚度偏高、膜面无绒面复合层消声、缺少机械柔化预处理。通过降低 TPU 膜厚度、增加针织绒面复合层、增加机械柔化处理，异响投诉率大幅下降且防水性能维持达标。",
+  "domain": "home-textile",
+  "product": "防水床垫护垫",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "noise"
+  ],
+  "disciplines": [
+    "raw-material",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto",
+    "DOE"
+  ],
+  "standards": [
+    "AATCC-127"
+  ],
+  "regulations": ["CFR-16-1632"],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "noise-complaint-rate",
+      "before": 3.1,
+      "after": 0.6,
+      "target": 1.0,
+      "headline": true,
+      "note": "异响投诉率（异响/沙沙声相关负面评论数 / 同期评论总数 × 100%）"
+    },
+    {
+      "metric": "hydrostatic-mm",
+      "before": 8500,
+      "after": 6200,
+      "target": 3000,
+      "note": "静水压 mm（AATCC 127），膜减薄后仍远超标准要求"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

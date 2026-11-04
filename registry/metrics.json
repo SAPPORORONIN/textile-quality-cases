@@ -58,6 +58,25 @@
     "fabric-defect-points": { "label": "四分制疵点", "unit": "分/100 yd", "type": "continuous", "direction": "lower", "cpkAllowed": false, "definition": "ASTM D5430 四分制目检评分，每 100 线性码的平均疵点分。" },
     "spray-rating": { "label": "拒水等级（喷淋）", "unit": "", "type": "ordinal", "direction": "higher", "cpkAllowed": false, "definition": "AATCC 22 喷淋法拒水评级（ISO 0–100），按客户指定洗涤次数后测试。" },
     "8d-closure-days": { "label": "8D 关闭周期", "unit": "天", "type": "duration", "direction": "lower", "cpkAllowed": false, "definition": "从 8D 立案（D1 签发）到 D8 关闭签核的自然天数中位数。" },
-    "repeat-issue-rate": { "label": "重复问题率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "同一供应商 × 同一失效模式在 12 个月内再次发生 8D 的比例。" }
+    "repeat-issue-rate": { "label": "重复问题率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "同一供应商 × 同一失效模式在 12 个月内再次发生 8D 的比例。" },
+    "dimensional-change-pct": { "label": "尺寸变化率", "unit": "%", "type": "continuous", "direction": "higher-abs-worse", "cpkAllowed": true, "definition": "按 AATCC 150 或同等方法测试的经向或纬向尺寸变化百分比；负值为缩水，正值为伸长。须注明方向（经/纬）、洗涤条件和次数。" },
+    "down-leakage-complaint-rate": { "label": "钻绒投诉率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "钻绒相关负面评论数 / 同期评论总数 × 100%。" },
+    "downproof-air-permeability": { "label": "面料防绒透气量", "unit": "cc/s/cm²", "type": "continuous", "direction": "lower", "cpkAllowed": true, "definition": "按 IDFB 或同等方法测试的面料透气量，数值越低防绒性越好。" },
+    "fabric-gsm": { "label": "面料克重", "unit": "g/m²", "type": "continuous", "direction": "spec", "cpkAllowed": true, "definition": "单位面积面料重量，按 ASTM D3776 或同等方法测试。" },
+    "felting-shrinkage-pct": { "label": "毡缩率", "unit": "%", "type": "continuous", "direction": "higher-abs-worse", "cpkAllowed": true, "definition": "多次洗涤后因纤维毡化导致的累积尺寸变化百分比。须注明洗涤条件和次数。" },
+    "fiber-diameter-cv-pct": { "label": "纤维直径变异系数", "unit": "%", "type": "continuous", "direction": "lower", "cpkAllowed": true, "definition": "纤维直径分布的变异系数（标准差/均值 × 100%），按 IWTO-47 或同等方法测试。CV% 越低、直径越均匀。" },
+    "hand-feel-score": { "label": "手感评分", "unit": "分", "type": "ordinal", "direction": "higher", "cpkAllowed": false, "definition": "按内部方法评估的面料手感评分（1-5 分制，5 为最柔软）。须注明评估方法（仪器/主观）和评分规则。" },
+    "itch-return-rate": { "label": "刺痒原因退货率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "原因编码为刺痒/扎人的退货件数 / 同期售出件数。" },
+    "loft-complaint-rate": { "label": "蓬松度投诉率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "蓬松度/支撑不足相关负面评论数 / 同期评论总数 × 100%。" },
+    "loft-retention-pct": { "label": "蓬松度保持率", "unit": "%", "type": "continuous", "direction": "higher", "cpkAllowed": true, "definition": "使用/洗涤后蓬松高度 / 初始蓬松高度 × 100%。须注明使用/洗涤条件和次数。" },
+    "noise-complaint-rate": { "label": "异响投诉率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "使用异响相关负面评论数 / 同期评论总数 × 100%。" },
+    "opacity-pct": { "label": "面料不透光率", "unit": "%", "type": "continuous", "direction": "higher", "cpkAllowed": true, "definition": "按 AATCC 224 或客户方法测试的面料不透光率百分比。须注明光源类型、试样层数和仪器。" },
+    "prickle-factor-pct": { "label": "刺痒因子", "unit": "%", "type": "continuous", "direction": "lower", "cpkAllowed": true, "definition": "纤维直径分布中 >30 μm 纤维的重量或根数占比。数值越低、刺痒感越轻。" },
+    "seam-break-force-N": { "label": "接缝断裂强力(N)", "unit": "N", "type": "continuous", "direction": "higher", "cpkAllowed": true, "definition": "按 ASTM D1683 或同等方法测试的接缝断裂强力，单位牛顿。须注明缝型、缝线和取样位置。" },
+    "seam-slippage-mm": { "label": "缝纫滑移量", "unit": "mm", "type": "continuous", "direction": "lower", "cpkAllowed": true, "definition": "按 ASTM D1683 或同等方法测试的缝纫滑移位移量。须注明施加载荷和取样位置。" },
+    "shrinkage-return-rate": { "label": "缩水原因退货率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "原因编码为缩水的退货件数 / 同期售出件数。" },
+    "size-exchange-rate": { "label": "尺码换货率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "因尺码不合适发起换码的件数 / 同期售出件数。" },
+    "thin-complaint-rate": { "label": "偏薄投诉率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "面料偏薄/克重不足相关负面评论数 / 同期评论总数 × 100%。" },
+    "touch-complaint-rate": { "label": "触感投诉率", "unit": "%", "type": "rate", "direction": "lower", "cpkAllowed": false, "definition": "触感粗糙/扎人/硬挺相关负面评论数 / 同期评论总数 × 100%。" }
   }
 }

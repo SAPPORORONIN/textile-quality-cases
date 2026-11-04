@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-017",
+  "legacyId": null,
+  "title": "蒙古羊绒短袖衫洗后缩水改进",
+  "summary": "羊绒针织衫按标签手洗后缩率远超预期，部分消费者反映 L 码缩成 S 码；根因为防缩预处理不足与松弛回缩叠加，通过优化氯化/酶处理和增加预缩松弛工序改善尺寸稳定性。",
+  "domain": "apparel",
+  "product": "蒙古羊绒短袖 T 恤",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "dimensional-change",
+    "felting"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "raw-material",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "5-Why",
+    "DOE"
+  ],
+  "standards": [
+    "AATCC-150"
+  ],
+  "regulations": ["FTC-423"],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "dimensional-change-pct",
+      "before": -8.5,
+      "after": -3.2,
+      "target": -3.0,
+      "headline": true,
+      "note": "AATCC 150，1 次家庭洗涤后经向"
+    },
+    {
+      "metric": "felting-shrinkage-pct",
+      "before": -5.1,
+      "after": -1.8,
+      "target": -2.0,
+      "note": "5 次洗涤累积"
+    },
+    {
+      "metric": "shrinkage-return-rate",
+      "before": 1.8,
+      "after": 0.5
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-014",
+  "legacyId": null,
+  "title": "轻薄绉布半裙透光性改进",
+  "summary": "绉布 A 字迷你裙面料克重不足导致深色也透视，消费者需额外购买衬裙；通过提升 GSM 和调整织物密度改善遮蔽性。",
+  "domain": "apparel",
+  "product": "轻薄绉布 A 字迷你裙",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "opacity"
+  ],
+  "disciplines": [
+    "raw-material",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA",
+    "DOE"
+  ],
+  "standards": ["AATCC-224"],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "composite",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "opacity-pct",
+      "before": 58,
+      "after": 78,
+      "target": 75,
+      "headline": true
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": 6.8,
+      "after": 3.5
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "基于公开消费者评论数据的 CI 案例草稿，待审计"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-04"
+}
