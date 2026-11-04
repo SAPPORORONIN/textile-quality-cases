@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>纺织质量案例库 / Textile Quality Case Library</title>
-  <link rel="stylesheet" href="site/style.css?v=3">
+  <link rel="stylesheet" href="site/style.css?v=4">
 </head>
 <body>
   <header class="topbar">
@@ -20,7 +20,10 @@
         <button data-tab="playbooks" data-i18n="tab.playbooks">模板与 SOP</button>
         <button data-tab="interview" data-i18n="tab.interview">面试</button>
       </nav>
-      <button id="langToggle" class="lang-btn" aria-label="Switch language">EN</button>
+      <div class="lang-group">
+        <button id="biToggle" class="lang-btn bi-btn" data-action="bi" aria-pressed="false" title="中英对照">中|EN</button>
+        <button id="langToggle" class="lang-btn" data-action="lang" aria-label="Switch language">EN</button>
+      </div>
     </div>
   </header>
 
@@ -72,18 +75,22 @@
           <div class="muted" id="readerMeta"></div>
           <h1 id="readerTitle"></h1>
         </div>
-        <button id="readerClose" aria-label="关闭">✕</button>
+        <div class="reader-actions">
+          <button class="lang-btn bi-btn" data-action="bi" aria-pressed="false" title="中英对照">中|EN</button>
+          <button class="lang-btn" data-action="lang" aria-label="Switch language">EN</button>
+          <button id="readerClose" aria-label="关闭">✕</button>
+        </div>
       </div>
       <div id="readerBody" class="reader-body"></div>
     </div>
   </div>
 
   <script src="dist/catalog.js"></script>
-  <script src="site/markdown.js"></script>
+  <script src="site/markdown.js?v=2"></script>
   <script src="site/cases-en.js"></script>
   <script src="site/registry-en.js"></script>
   <script src="site/docs-en.js"></script>
-  <script src="site/i18n.js"></script>
-  <script src="site/app.js?v=2"></script>
+  <script src="site/i18n.js?v=2"></script>
+  <script src="site/app.js?v=3"></script>
 </body>
 </html>

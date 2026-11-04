@@ -53,7 +53,9 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
 .reader-panel { background: var(--surface); width: min(1000px, 100%); border-radius: var(--radius); display: flex; flex-direction: column; overflow: hidden; }
 .reader-head { display: flex; justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid var(--border); }
 .reader-head h1 { margin: 2px 0 0; font-size: 20px; }
-.reader-head button { background: none; border: 1px solid var(--border); color: var(--text); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; flex: none; }
+.reader-actions { display: flex; gap: 6px; align-items: flex-start; flex: none; }
+.reader-actions .lang-btn { height: 34px; }
+#readerClose { background: none; border: 1px solid var(--border); color: var(--text); border-radius: 8px; width: 34px; height: 34px; cursor: pointer; flex: none; }
 .reader-body { padding: 4px 18px 24px; overflow-y: auto; }
 .reader-body h2 { font-size: 18px; margin-top: 26px; }
 .reader-body h3 { font-size: 16px; }
@@ -64,6 +66,25 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
 .facts h2 { margin: 14px 0 4px; font-size: 16px; }
 .factline { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
 .warnlist li { margin-bottom: 4px; font-size: 13px; }
+/* ── Side-by-side (bilingual) mode ── */
+.lang-group { display: flex; gap: 6px; flex-shrink: 0; }
+.bi-btn { background: var(--surface); color: var(--muted); }
+.bi-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.alt { display: block; color: var(--muted); font-size: .86em; font-weight: 400; line-height: 1.45; margin-top: 2px; }
+.badge .alt, .factline .alt { display: inline; font-size: inherit; margin: 0; }
+.badge .alt::before, .factline .alt::before { content: ' · '; }
+.reader-head h1 .alt { font-size: 15px; margin-top: 4px; }
+.card h3 .alt { font-size: 13px; }
+.reader.bi-wide .reader-panel { width: min(1440px, 100%); }
+.bi { margin-top: 8px; }
+.bi-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0 28px; padding: 0 8px; border-radius: 6px; }
+.bi-row:hover:not(.bi-legend) { background: var(--surface-2); }
+.bi-col { min-width: 0; }
+.bi-alt { border-left: 1px solid var(--border); padding-left: 20px; margin-left: -8px; }
+.bi-gap .bi-col:empty::after { content: '—'; color: var(--muted); display: block; padding: 1em 0; }
+.bi-legend { position: sticky; top: 0; z-index: 1; background: var(--surface); border-bottom: 1px solid var(--border); border-radius: 0; font-size: 12px; font-weight: 600; color: var(--muted); padding-top: 8px; padding-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+.bi-legend > div + div { padding-left: 12px; }
+.bi-head h2, .bi-head h3, .bi-head h4 { margin-bottom: 4px; }
 /* ── Mobile optimizations ── */
 @media (max-width: 640px) {
   /* Topbar: scrollable tabs with lang button inline */
@@ -88,7 +109,12 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
   /* Reader: full-screen modal */
   .reader { padding: 0; }
   .reader-panel { border-radius: 0; width: 100%; }
-  .reader-head { padding: 12px 14px; }
+  .reader-head { padding: 10px 14px 12px; flex-wrap: wrap; gap: 8px; }
+  .reader-head > div:first-child { flex: 1 1 100%; }
+  .reader-actions { order: -1; width: 100%; justify-content: flex-end; gap: 6px; }
+  .reader-actions .lang-btn, #readerClose { height: 32px; }
+  #readerClose { width: 32px; }
+  .reader-head h1 .alt { font-size: 13px; }
   .reader-head h1 { font-size: 17px; }
   .reader-body { padding: 4px 14px 20px; }
   .reader-body h2 { font-size: 16px; margin-top: 20px; }
@@ -116,4 +142,15 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
   /* Facts in reader */
   .factline { font-size: 13px; gap: 4px 10px; }
   .badges .badge { font-size: 11px; padding: 1px 6px; }
+
+  /* Bilingual: stack each pair, translation directly under the original */
+  .lang-group { gap: 4px; }
+  .bi-legend { display: none; }
+  .bi-row { grid-template-columns: minmax(0, 1fr); padding: 0; }
+  .bi-row:hover:not(.bi-legend) { background: none; }
+  .bi-alt { border-left: 3px solid var(--accent-soft); margin: 0 0 6px; padding-left: 10px; color: var(--muted); font-size: 13px; }
+  .bi-alt > :first-child { margin-top: 0; }
+  .bi-head .bi-alt { border-left: 0; padding-left: 0; }
+  .bi-head .bi-alt h2, .bi-head .bi-alt h3, .bi-head .bi-alt h4 { margin-top: 0; font-size: 14px; }
+  .bi-gap .bi-col:empty { display: none; }
 }

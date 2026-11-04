@@ -15,6 +15,7 @@ window.I18N = (() => {
       'reg.filter': '筛选…',
       'gov.title': '治理文件',
       'build.info': (v, d, n) => `v${v} · 构建于 ${d} · ${n} 个案例`,
+      'bi.title': '中英对照：同时显示中文与英文',
       'filter.all': (label) => `${label}：全部`,
       'filter.domain': '领域',
       'filter.stage': '阶段',
@@ -92,6 +93,7 @@ window.I18N = (() => {
       'reg.filter': 'Filter…',
       'gov.title': 'Governance documents',
       'build.info': (v, d, n) => `v${v} · built ${d} · ${n} cases`,
+      'bi.title': 'Show Chinese and English side by side',
       'filter.all': (label) => `${label}: all`,
       'filter.domain': 'Domain',
       'filter.stage': 'Stage',
@@ -183,6 +185,8 @@ window.I18N = (() => {
 
   const getLang = () => lang;
   const init = () => setLang(lang);
+  // Look up a key in a specific language regardless of the current UI language (for side-by-side mode).
+  const tIn = (l, key) => dict[l] && dict[l][key];
 
-  return { t, setLang, getLang, init };
+  return { t, tIn, setLang, getLang, init };
 })();
