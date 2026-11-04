@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>纺织质量案例库 / Textile Quality Case Library</title>
+  <link rel="stylesheet" href="site/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <strong data-i18n="brand">纺织服装家纺质量案例库</strong>
+      <span class="muted" id="buildInfo"></span>
+    </div>
+    <div class="topbar-right">
+      <nav class="tabs" id="tabs" role="tablist">
+        <button data-tab="cases" class="active" data-i18n="tab.cases">案例</button>
+        <button data-tab="registry" data-i18n="tab.registry">注册表</button>
+        <button data-tab="governance" data-i18n="tab.governance">治理与健康度</button>
+        <button data-tab="playbooks" data-i18n="tab.playbooks">模板与 SOP</button>
+        <button data-tab="interview" data-i18n="tab.interview">面试</button>
+      </nav>
+      <button id="langToggle" class="lang-btn" aria-label="Switch language">EN</button>
+    </div>
+  </header>
+
+  <div class="notice" data-i18n="notice">全部案例为<strong>示例案例</strong>：情景与数字用于教学，量级参考行业常见水平，不对应真实企业或事件；法规与标准条目为工作参考，不构成法律意见。</div>
+
+  <main>
+    <section id="tab-cases" class="tab">
+      <div class="filters">
+        <input id="q" type="search" data-i18n-placeholder="search.placeholder" placeholder="搜索标题、摘要、标准、失效模式…" aria-label="搜索">
+        <select id="fDomain" aria-label="领域"></select>
+        <select id="fStage" aria-label="阶段"></select>
+        <select id="fType" aria-label="类型"></select>
+        <select id="fFailure" aria-label="失效模式"></select>
+        <select id="fReview" aria-label="评审状态"></select>
+        <span class="muted" id="caseCount"></span>
+      </div>
+      <div class="grid" id="caseGrid"></div>
+    </section>
+
+    <section id="tab-registry" class="tab" hidden>
+      <div class="subtabs">
+        <button data-reg="standards" class="active" data-i18n="reg.standards">标准与方法</button>
+        <button data-reg="regulations" data-i18n="reg.regulations">法规</button>
+        <button data-reg="metrics" data-i18n="reg.metrics">指标口径</button>
+      </div>
+      <input id="regQ" type="search" data-i18n-placeholder="reg.filter" placeholder="筛选…" aria-label="筛选注册表">
+      <div id="regBody"></div>
+    </section>
+
+    <section id="tab-governance" class="tab" hidden>
+      <div id="health"></div>
+      <h2 data-i18n="gov.title">治理文件</h2>
+      <div class="doclist" id="govList"></div>
+    </section>
+
+    <section id="tab-playbooks" class="tab" hidden>
+      <div class="doclist" id="pbList"></div>
+    </section>
+
+    <section id="tab-interview" class="tab" hidden>
+      <div class="doclist" id="intList"></div>
+    </section>
+  </main>
+
+  <div id="reader" class="reader" hidden role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+    <div class="reader-panel">
+      <div class="reader-head">
+        <div>
+          <div class="muted" id="readerMeta"></div>
+          <h1 id="readerTitle"></h1>
+        </div>
+        <button id="readerClose" aria-label="关闭">✕</button>
+      </div>
+      <div id="readerBody" class="reader-body"></div>
+    </div>
+  </div>
+
+  <script src="dist/catalog.js"></script>
+  <script src="site/markdown.js"></script>
+  <script src="site/cases-en.js"></script>
+  <script src="site/registry-en.js"></script>
+  <script src="site/docs-en.js"></script>
+  <script src="site/i18n.js"></script>
+  <script src="site/app.js"></script>
+</body>
+</html>

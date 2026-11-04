@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-010",
+  "legacyId": null,
+  "title": "辅料库存质量管理与保质期控制体系",
+  "summary": "辅料（粘合衬、弹力带、缝纫线等）长期库存后出现性能衰减（粘合力下降、弹力带老化、缝纫线强力降低），但品牌无辅料保质期管理制度。建立辅料分类保质期标准、FIFO 执行机制和到期前复测制度，大幅减少因辅料老化导致的量产缺陷（辅料相关 8D 从季均 6.2 降至 1.1）。",
+  "domain": "raw-material",
+  "product": "辅料全品类",
+  "stage": "production",
+  "caseType": "system",
+  "failureModes": [
+    "coating-delamination",
+    "elastic-fatigue",
+    "attachment-strength"
+  ],
+  "disciplines": [
+    "trims",
+    "raw-material"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto"
+  ],
+  "standards": ["ASTM-D5035"],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 91.2,
+      "after": 96.8,
+      "target": 95,
+      "headline": true,
+      "note": "全品类 FTR（稽核口径），此处改善主要归因于辅料老化问题的减少"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

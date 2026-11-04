@@ -1,0 +1,75 @@
+{
+  "version": "2.0.0",
+  "notes": "GOV-02 编写标准的机器可执行部分。severity=error 阻止构建，warning 进入季度复盘。",
+  "bannedPhrases": [
+    {
+      "pattern": "零投诉|零客诉|零缺陷|零瑕疵",
+      "severity": "error",
+      "reason": "绝对化结果无法证实；改为观察期内的具体比率"
+    },
+    {
+      "pattern": "100% ?(合格|合规|消除|封闭|杜绝|达标)",
+      "severity": "error",
+      "reason": "绝对化表述；改为样本量与通过率"
+    },
+    {
+      "pattern": "彻底(杜绝|根除|消除|锁死)",
+      "severity": "warning",
+      "reason": "夸大措辞；写明措施与残余风险"
+    },
+    {
+      "pattern": "世界级|全球首|行业顶级|业界顶级|(?<!历)史上最",
+      "severity": "warning",
+      "reason": "无依据的比较级"
+    },
+    {
+      "pattern": "挽救了?\\s*\\d+[^，。]*(万美元|USD)",
+      "severity": "warning",
+      "reason": "‘挽救订单金额’通常把货值当收益；改为实际损失与避免的损失"
+    },
+    {
+      "pattern": "美标(限值|要求)",
+      "severity": "error",
+      "reason": "混淆法定要求与客户要求；写明是联邦法规、州法、客户规格还是行业惯例"
+    },
+    {
+      "pattern": "灭菌|杀灭所有",
+      "severity": "warning",
+      "reason": "除非有验证数据，否则改为‘降低至限值以下并逐批验证’"
+    }
+  ],
+  "brandWatchlist": {
+    "severity": "error",
+    "scope": "cases",
+    "reason": "示例案例不得点名真实零售商/品牌作为事件主体（GOV-05）",
+    "names": [
+      "Lululemon",
+      "Target",
+      "Walmart",
+      "Amazon",
+      "Kohl's",
+      "Williams-Sonoma",
+      "Pottery Barn",
+      "Nike",
+      "Gap",
+      "Ralph Lauren",
+      "Costco",
+      "Macy's",
+      "IKEA",
+      "Patagonia",
+      "The North Face",
+      "Levi's",
+      "YKK",
+      "SGS",
+      "Intertek",
+      "Bureau Veritas",
+      "TÜV"
+    ]
+  },
+  "numberChecks": {
+    "metricValuesMustAppearInNarrative": "error",
+    "ledgerSumTolerance": 0.01,
+    "ledgerTotalShouldAppearInNarrative": "warning",
+    "orderValueShouldAppearInNarrative": "warning"
+  }
+}

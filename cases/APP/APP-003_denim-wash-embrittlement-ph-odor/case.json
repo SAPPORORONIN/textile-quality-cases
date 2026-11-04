@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-003",
+  "legacyId": "CASE_APP_03",
+  "title": "复古水洗牛仔裤脆化、酸性残留与异味",
+  "summary": "高锰酸钾、臭氧与重石磨叠加氧化降解纤维素；中和后清洗不足造成 pH 4.2 与含硫异味。脆化不可返修，6 万条拒收回收，新工艺重做 4 万条。",
+  "domain": "apparel",
+  "product": "牛仔裤",
+  "stage": "shipment",
+  "caseType": "incident",
+  "failureModes": [
+    "tear-strength",
+    "chemical-residue",
+    "odor",
+    "colorfastness"
+  ],
+  "disciplines": [
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D1424",
+    "AATCC-81",
+    "AATCC-8"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 60000,
+    "unit": "条",
+    "fobUsd": 28
+  },
+  "metrics": [
+    {
+      "metric": "tear-strength-lbf",
+      "before": 1.3,
+      "after": 2.6,
+      "target": 2.0,
+      "note": "膝部破坏区",
+      "headline": true
+    },
+    {
+      "metric": "ph",
+      "before": 4.2,
+      "after": 6.6,
+      "cpk": 1.9,
+      "note": "30 个子组，%GRR 6%"
+    },
+    {
+      "metric": "odor-grade",
+      "before": 3.5,
+      "after": 1,
+      "target": 2
+    },
+    {
+      "metric": "wet-crock-grade",
+      "before": 1.5,
+      "after": 2.0,
+      "target": 2.0
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 0.7,
+      "note": "全部质量原因；撕裂、气味相关 0.4%"
+    }
+  ],
+  "ledger": {
+    "basis": "FOB",
+    "items": [
+      [
+        "拒收货值",
+        1680000
+      ],
+      [
+        "处置与物流",
+        60000
+      ]
+    ],
+    "totalUsd": 1740000,
+    "allocation": "依合同由负责洗水的成衣供应商承担，分 4 期抵扣"
+  },
+  "disposition": [
+    {
+      "scope": "美国 DC",
+      "quantity": 60000,
+      "unit": "条",
+      "decision": "recycle",
+      "rationale": "纤维素氧化降解不可逆，返洗只能改善 pH 与气味"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-001",
+  "legacyId": "CASE_RM_01",
+  "title": "再生涤纶抓绒同色异谱与分散染料热迁移",
+  "summary": "经验拼色配方与标样光谱曲线不匹配；高温定形与柔软剂引起热迁移。已染 12 吨剥色重染或改染，其余 138 吨按新配方生产。",
+  "domain": "raw-material",
+  "product": "rPET 摇粒绒面料",
+  "stage": "development",
+  "caseType": "incident",
+  "failureModes": [
+    "metamerism",
+    "colorfastness",
+    "pilling"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "raw-material"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-8",
+    "AATCC-61",
+    "AATCC-EP9",
+    "AATCC-EP6",
+    "ASTM-D2244",
+    "ASTM-D3512"
+  ],
+  "regulations": [
+    "FTC-260"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 150,
+    "unit": "吨面料",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "metamerism-index",
+      "before": 2.85,
+      "after": 0.28,
+      "target": 0.5,
+      "headline": true
+    },
+    {
+      "metric": "wet-crock-grade",
+      "before": 1.5,
+      "after": 4.0,
+      "target": 3.0
+    },
+    {
+      "metric": "staining-grade",
+      "before": 2.0,
+      "after": 4.0,
+      "target": 3.5,
+      "note": "锦纶与涤纶贴衬中较差者"
+    },
+    {
+      "metric": "pilling-grade",
+      "before": 2.5,
+      "after": 3.5,
+      "target": 3.5
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "剥色重染 9 吨与改染 3 吨",
+        54000
+      ],
+      [
+        "9 吨再剪毛与复测",
+        6000
+      ],
+      [
+        "补织 3 吨坯布（替换转用的 3 吨）",
+        9600
+      ]
+    ],
+    "totalUsd": 69600,
+    "allocation": "染厂承担"
+  },
+  "disposition": [
+    {
+      "scope": "已染面料",
+      "quantity": 9,
+      "unit": "吨",
+      "decision": "reprocess",
+      "rationale": "还原剥色后按新配方重染；起球 2.5–3.0 级不合格，再剪毛后逐缸复测起球 3.5 级、克重、顶破、尺寸合格后放行"
+    },
+    {
+      "scope": "已染面料",
+      "quantity": 3,
+      "unit": "吨",
+      "decision": "redeploy",
+      "rationale": "剥色后底色不均，改染黑色用作内衬"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-004",
+  "legacyId": "CASE_HT_04",
+  "title": "800FP 鹅绒被芯耗氧量、异味与微生物超标",
+  "summary": "原毛存放腐败、水洗道数被压缩、残脂偏高。11,000 条拆胆取绒复洗后降为 750 FP 产品，删除无依据的“低过敏”声明。",
+  "domain": "home-textile",
+  "product": "羽绒被芯",
+  "stage": "shipment",
+  "caseType": "incident",
+  "failureModes": [
+    "microbial",
+    "odor",
+    "chemical-residue"
+  ],
+  "disciplines": [
+    "raw-material",
+    "compliance"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "IDFB-TEST-RULES"
+  ],
+  "regulations": [
+    "FTC-ACT-5",
+    "STATE-LAW-LABEL"
+  ],
+  "historicalRegulations": [
+    "FTC-253"
+  ],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 20000,
+    "unit": "条",
+    "fobUsd": 180
+  },
+  "metrics": [
+    {
+      "metric": "oxygen-number",
+      "before": 28.5,
+      "after": 4.8,
+      "target": 10,
+      "headline": true
+    },
+    {
+      "metric": "odor-grade",
+      "before": 3.5,
+      "after": 1,
+      "target": 1
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 0.7,
+      "note": "全部质量原因；气味相关 0.4%"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "DC 退回运费",
+        38000
+      ],
+      [
+        "拆胆取绒 11,000 条",
+        66000
+      ],
+      [
+        "复洗羽绒约 18 吨",
+        90000
+      ],
+      [
+        "外胆报废 11,000 条",
+        154000
+      ],
+      [
+        "约 18 吨羽绒 800 FP 转 750 FP 价差",
+        270000
+      ],
+      [
+        "延误空运与折让",
+        72000
+      ]
+    ],
+    "totalUsd": 690000,
+    "allocation": "水洗厂 85%（擅自压缩水洗、干燥不足）/ 品牌自担 15%（未按水洗批放行即充绒）"
+  },
+  "disposition": [
+    {
+      "scope": "DC 与工厂已充绒",
+      "quantity": 11000,
+      "unit": "条",
+      "decision": "redeploy",
+      "rationale": "羽绒复洗合格但仅 760 FP，转 750 FP 产品线；外胆报废"
+    },
+    {
+      "scope": "未充绒部分对应的已水洗羽绒",
+      "quantity": 8.1,
+      "unit": "吨",
+      "decision": "redeploy",
+      "rationale": "来自不合格水洗批；按新工艺复洗后卫生指标合格，蓬松度 755–770 FP，转 750 FP 产品线"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

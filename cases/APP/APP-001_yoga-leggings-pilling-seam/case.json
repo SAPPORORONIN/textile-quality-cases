@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-001",
+  "legacyId": "CASE_APP_01",
+  "title": "高弹瑜伽裤穿着起球与绷缝接缝开裂",
+  "summary": "重磨毛打断表层锦纶单丝导致起球；弯针线储线量不足使接缝在 42% 伸长即开裂。处置 35,000 条在库与 60 吨已整理面料，重建磨毛窗口与线迹参数。",
+  "domain": "apparel",
+  "product": "运动紧身裤",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "pilling",
+    "seam-failure"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "sewing",
+    "raw-material"
+  ],
+  "tools": [
+    "8D",
+    "PFMEA",
+    "DOE",
+    "MSA"
+  ],
+  "standards": [
+    "ASTM-D4970",
+    "ASTM-D3512"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 300000,
+    "unit": "条",
+    "fobUsd": 15
+  },
+  "metrics": [
+    {
+      "metric": "quality-return-rate",
+      "baseline": 1.1,
+      "before": 7.4,
+      "after": 0.9,
+      "headline": true
+    },
+    {
+      "metric": "total-return-rate",
+      "baseline": 19,
+      "before": 27,
+      "after": 19.5
+    },
+    {
+      "metric": "pilling-grade",
+      "before": 1.5,
+      "after": 3.5,
+      "target": 3.5,
+      "note": "ASTM D4970，3 次洗涤后"
+    },
+    {
+      "metric": "seam-break-force-lbf",
+      "before": 18.5,
+      "after": 56.8,
+      "target": 40
+    },
+    {
+      "metric": "seam-crack-elongation",
+      "before": 42,
+      "after": 145,
+      "target": 120
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "在库 35,000 条报废（FOB）",
+        525000
+      ],
+      [
+        "质量退货约 1,110 条与客服物流处理",
+        55000
+      ],
+      [
+        "其他原因退回约 2,940 条随库存回收（FOB）",
+        44100
+      ],
+      [
+        "60 吨已整理面料拒收",
+        720000
+      ],
+      [
+        "测试、加急与管理（实际支出）",
+        100000
+      ]
+    ],
+    "totalUsd": 1444100,
+    "allocation": "面料损失由面料厂承担；成品损失面料原因 60% / 线迹原因 40%，线迹部分由成衣厂与品牌协商"
+  },
+  "disposition": [
+    {
+      "scope": "DC 在库与门店撤回",
+      "quantity": 35000,
+      "unit": "条",
+      "decision": "recycle",
+      "rationale": "起球为面料表面结构问题，无法返工；拆缝重做成本超过产品价值"
+    },
+    {
+      "scope": "已售退回（其他原因）",
+      "quantity": 2940,
+      "unit": "条",
+      "decision": "recycle",
+      "rationale": "同批货同样有缺陷，不再销售，随库存去标回收"
+    },
+    {
+      "scope": "已重磨毛面料",
+      "quantity": 60,
+      "unit": "吨",
+      "decision": "reject-to-supplier",
+      "rationale": "加抗起球整理后仍只有 2.5–3.0 级"
+    },
+    {
+      "scope": "未磨毛坯布",
+      "quantity": 18,
+      "unit": "吨",
+      "decision": "reprocess",
+      "rationale": "按新磨毛窗口整理后使用"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-008",
+  "legacyId": null,
+  "title": "C0 DWR 替代 PFAS 后喷淋拒水耐洗性衰减",
+  "summary": "为满足 CA AB1817 法规要求，户外夹克面料从 C6 含氟 DWR 转为 C0 无氟 DWR。初始喷淋评级 90 分与 C6 相当，但 5 次家庭洗涤后从 90 跌至 50（客户要求 ≥ 70）。通过优化焙烘温度窗口、增加交联剂用量与引入烘干再激活工艺，洗 5 次后喷淋评级恢复到 80。",
+  "domain": "raw-material",
+  "product": "涤纶塔丝隆 PU 涂层户外夹克面料",
+  "stage": "development",
+  "caseType": "ci",
+  "failureModes": [
+    "waterproofing",
+    "chemical-residue"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing",
+    "compliance"
+  ],
+  "tools": [
+    "DOE",
+    "DMAIC"
+  ],
+  "standards": [
+    "AATCC-22",
+    "AATCC-127",
+    "AATCC-135"
+  ],
+  "regulations": [
+    "CA-AB1817"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 60,
+    "unit": "吨面料",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "spray-rating",
+      "before": 50,
+      "after": 80,
+      "target": 70,
+      "headline": true,
+      "note": "AATCC 22，AATCC 135 程序 (1)(V)(Aiii) 洗 5 次后"
+    },
+    {
+      "metric": "hydrostatic-mm",
+      "before": 10200,
+      "after": 10500,
+      "target": 10000,
+      "note": "AATCC 127，PU 涂层面，洗 5 次后；DWR 更换未影响涂层"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

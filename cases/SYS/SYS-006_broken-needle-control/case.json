@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-006",
+  "legacyId": "CASE_SYS_06",
+  "title": "断针碎片追溯与含金属辅料款检针盲区",
+  "summary": "断针拼图与纸质记录缩小隔离范围，事后建立扫码时间戳；此前绕过检针机的同款批次复检；含金属辅料款优先非铁磁辅料或分段检针。",
+  "domain": "systemic",
+  "product": "含金属拉链成衣",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "foreign-object"
+  ],
+  "disciplines": [
+    "sewing",
+    "trims"
+  ],
+  "tools": [
+    "5-Why"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "isolation-time-min",
+      "before": 95,
+      "after": 25,
+      "headline": true
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "停线与复检工时",
+        4000
+      ],
+      [
+        "此前同款批次 X 光与检针复检（在厂与 DC）",
+        18500
+      ]
+    ],
+    "totalUsd": 22500,
+    "allocation": "成衣厂承担（质量协议：未经批准偏离检针程序造成的费用由工厂承担）"
+  },
+  "disposition": [
+    {
+      "scope": "时间窗内含针尖",
+      "quantity": 1,
+      "unit": "件",
+      "decision": "scrap",
+      "rationale": "针尖取出后布面穿孔，QA 主管签字报废"
+    },
+    {
+      "scope": "时间窗内未上拉链在制品",
+      "quantity": 139,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "整件检针无异常，放回生产线继续缝制"
+    },
+    {
+      "scope": "时间窗内已上拉链",
+      "quantity": 240,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "避开辅料区局部检针 + 人工检查无异常"
+    },
+    {
+      "scope": "本次隔离范围内其余",
+      "quantity": 880,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "碎片已拼齐；同样未过检针机，拉链区 X 光 + 局部检针复检无异常后放行"
+    },
+    {
+      "scope": "此前同款在厂成品",
+      "quantity": 3140,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "拉链区 X 光 + 局部检针复检无异常"
+    },
+    {
+      "scope": "此前同款在 DC 未上架",
+      "quantity": 2600,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "DC 隔离，第三方按同方案复检无异常"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

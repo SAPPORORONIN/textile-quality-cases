@@ -1,0 +1,98 @@
+{
+  "version": "2.0.0",
+  "domains": {
+    "apparel": "服装",
+    "home-textile": "家纺",
+    "raw-material": "原料与辅料",
+    "systemic": "体系与供应链"
+  },
+  "stages": {
+    "development": { "label": "产前/开发", "order": 1, "definition": "大货下单或开裁前：设计、打样、面辅料准入、产前门禁" },
+    "production": { "label": "产中", "order": 2, "definition": "开裁到工厂出货前：在线检验、出货前测试、工厂内拦截" },
+    "shipment": { "label": "出货/到港", "order": 3, "definition": "离厂到上架前：口岸、DC 到货检验、仓配" },
+    "post-market": { "label": "售后", "order": 4, "definition": "上架销售后：消费者退货、客诉、市场反馈" }
+  },
+  "caseTypes": {
+    "incident": { "label": "质量事故 (8D)", "requiredMarkers": ["背景", "根因", "处置", "验证", "STAR"], "requiresLedger": true, "requiresDisposition": true },
+    "gate": { "label": "产前门禁拦截", "requiredMarkers": ["背景", "根因", "验证", "门禁", "STAR"], "requiresLedger": false, "requiresDisposition": false },
+    "ci": { "label": "持续改进", "requiredMarkers": ["背景", "根因", "验证", "STAR"], "requiresLedger": false, "requiresDisposition": false },
+    "system": { "label": "体系建设", "requiredMarkers": ["背景", "STAR"], "requiresLedger": false, "requiresDisposition": false }
+  },
+  "dispositionDecisions": {
+    "release": "检验合格放行",
+    "rework": "返工后复检放行",
+    "reprocess": "回修/再加工（面料、羽绒等）",
+    "redeploy": "转用于其他产品或渠道（如实标示）",
+    "downgrade": "降级/去标出售",
+    "return-to-vendor": "退回供应商",
+    "reject-to-supplier": "拒收，由供应商承担",
+    "recycle": "去标后回收处理",
+    "scrap": "报废",
+    "recondition-under-supervision": "经监管机构批准的监管下整改",
+    "redesign": "未生产部分按工程变更重新设计"
+  },
+  "failureModes": {
+    "pilling": "起毛起球",
+    "seam-failure": "接缝开裂/爆线",
+    "seam-slippage": "接缝滑移",
+    "tear-strength": "撕破强力不足",
+    "colorfastness": "色牢度",
+    "metamerism": "同色异谱",
+    "color-expectation": "颜色预期/色阶",
+    "dimensional-change": "尺寸变化/扭斜",
+    "chlorine-degradation": "耐氯衰减",
+    "retroreflection": "逆反射衰减",
+    "coating-delamination": "涂层/胶条脱层",
+    "blocking": "涂层粘连",
+    "waterproofing": "防水失效",
+    "down-leakage": "钻绒",
+    "microbial": "微生物/卫生指标",
+    "odor": "异味",
+    "chemical-residue": "化学残留/pH",
+    "flammability": "燃烧性能",
+    "regulatory-children": "儿童产品法规违规",
+    "lint-shedding": "落絮掉毛",
+    "absorbency": "吸水性",
+    "corrosion": "金属腐蚀",
+    "attachment-strength": "附件牢度",
+    "felting": "毡化缩水",
+    "print-durability": "印花耐久",
+    "tuft-bind": "簇绒牢度",
+    "elastic-fatigue": "松紧带疲劳",
+    "fill-migration": "填充物迁移",
+    "fit": "版型/尺码适配",
+    "unboxing": "开箱体验/蓬松恢复",
+    "fulfillment-error": "仓配错发漏发",
+    "returns-data-quality": "退货数据质量",
+    "lab-measurement": "实验室测量一致性",
+    "traceability": "批次追溯",
+    "foreign-object": "异物/断针",
+    "supplier-governance": "供应商治理",
+    "cost-of-quality": "质量成本"
+  },
+  "disciplines": {
+    "design-pdd": "设计与版型",
+    "raw-material": "面料开发",
+    "dyeing-finishing": "染整与洗水",
+    "sewing": "缝制工艺",
+    "trims": "辅料",
+    "compliance": "法规合规",
+    "sourcing": "采购与供应商管理",
+    "lab": "实验室与测量",
+    "logistics-ecommerce": "仓配与电商",
+    "finance": "财务与质量成本"
+  },
+  "tools": ["8D", "5-Why", "Fishbone", "PFMEA", "DFMEA", "DOE", "SPC", "MSA", "DMAIC", "QCP", "Pareto", "PDCA", "A/B Test", "Kappa"],
+  "provenance": {
+    "illustrative": "示例案例：情景与数字为教学用途编写，量级参考行业常见水平，不对应任何真实企业或事件",
+    "composite": "合成案例：由多个真实经历去标识化后合并改写，数字已调整",
+    "anonymized-real": "去标识化真实案例：经授权并去除可识别信息，关键数字有内部证据存档"
+  },
+  "reviewStatuses": {
+    "draft": "草稿",
+    "technical-review": "技术评审中",
+    "compliance-review": "合规评审中",
+    "approved": "已批准",
+    "retired": "已退役"
+  }
+}

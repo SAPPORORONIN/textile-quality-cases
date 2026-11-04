@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-007",
+  "legacyId": "CASE_APP_07",
+  "title": "高可视阻燃工装反光条洗后脱胶与逆反射衰减",
+  "summary": "反光条底涂与阻燃整理面料不相容、热压头边缘温度不足，25 次工业洗涤后脱胶。改底涂与热压窗口，复测阻燃与电弧性能。",
+  "domain": "apparel",
+  "product": "高可视阻燃工装",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "retroreflection",
+    "coating-delamination"
+  ],
+  "disciplines": [
+    "trims",
+    "sewing",
+    "compliance"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-E810",
+    "ANSI-ISEA-107",
+    "ASTM-F1506"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 52000,
+    "unit": "件",
+    "fobUsd": 25
+  },
+  "metrics": [
+    {
+      "metric": "retroreflection",
+      "before": 186,
+      "after": 286,
+      "target": 250,
+      "headline": true
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "报废 1,100 件（FOB）",
+        27500
+      ],
+      [
+        "加缝返工 5,700 件（实际支出）",
+        9000
+      ]
+    ],
+    "totalUsd": 36500,
+    "allocation": "反光条供应商与成衣厂分担"
+  },
+  "disposition": [
+    {
+      "scope": "已压反光条（14 个合格判定批）",
+      "quantity": 5700,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "经客户批准沿反光条边缘以芳纶线加缝固定，不覆盖反光面；按“热压头 × 生产日”判定批每批抽 3 件做 25 次工业洗涤复测合格"
+    },
+    {
+      "scope": "已压反光条（3 个不合格判定批 + 合格批的破坏性试样）",
+      "quantity": 1100,
+      "unit": "件",
+      "decision": "scrap",
+      "rationale": "2 号压头 3 个判定批复测不合格（1,058 件），另含 42 件破坏性试验试样"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

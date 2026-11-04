@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-002",
+  "legacyId": "CASE_TRIM_01",
+  "title": "金属拉链头盐雾腐蚀与爪扣钉合牢度不足",
+  "summary": "锌合金拉头镍层薄且多孔，盐雾 12 小时基材腐蚀、24 小时卡滞；打扣气压不足使爪齿未卷边；辅料未放行即上线。只处理拉头，打扣压力互锁，门襟补强，辅料放行互锁。",
+  "domain": "raw-material",
+  "product": "机能夹克辅料",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "corrosion",
+    "attachment-strength"
+  ],
+  "disciplines": [
+    "trims",
+    "sewing",
+    "design-pdd"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "ASTM-B117",
+    "ASTM-D2061",
+    "ASTM-D7142",
+    "ASTM-D4846"
+  ],
+  "regulations": [
+    "CA-PROP65"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 120000,
+    "unit": "件",
+    "fobUsd": 30
+  },
+  "metrics": [
+    {
+      "metric": "salt-spray-hours",
+      "before": 12,
+      "after": 96,
+      "target": 48,
+      "afterQualifier": "≥",
+      "note": "96 h 停止试验时未失效（截尾值）；盐雾前 500 次往复开合预处理"
+    },
+    {
+      "metric": "snap-holding-lbf",
+      "before": 8.2,
+      "after": 28.5,
+      "target": 17,
+      "headline": true
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 0.9,
+      "baseline": 1.0,
+      "note": "全部质量原因；拉链卡滞与按扣脱落相关 0.3%（上一季同类 0.4%）；跟踪延长到 12 个月"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "拉头更换与按扣复压",
+        95000
+      ]
+    ],
+    "totalUsd": 95000,
+    "allocation": "拉链厂与成衣厂分担"
+  },
+  "disposition": [
+    {
+      "scope": "已上衣",
+      "quantity": 20000,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "逐件换拉头；按扣按爪扣供应商确认的方法复压，118 件裂齿件加 TPU 补强片重打；每批抽 5 件洗 5 次后 D7142 19.6–23.4 lbf，客户书面同意不补强放行"
+    },
+    {
+      "scope": "在库拉链",
+      "quantity": 150000,
+      "unit": "条",
+      "decision": "rework",
+      "rationale": "拉链厂更换拉头"
+    }
+  ],
+  "headlineText": "盐雾 12h 基材腐蚀 ➔ ≥ 96h 未失效（要求 48h）/ 按扣 8.2 ➔ 28.5 lbf",
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

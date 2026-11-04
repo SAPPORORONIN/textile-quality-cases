@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-002",
+  "legacyId": "CASE_HT_02",
+  "title": "全遮光窗帘涂层粘连脱层与 NFPA 701 不合格",
+  "summary": "涂层交联不足导致海运粘连与洗后脱层；普通涤纶熔滴续燃 8.5 秒。酒店款改本质阻燃涤纶重织，到港货物退运补焙烘转零售且不作阻燃声明。",
+  "domain": "home-textile",
+  "product": "遮光窗帘",
+  "stage": "shipment",
+  "caseType": "incident",
+  "failureModes": [
+    "flammability",
+    "coating-delamination",
+    "blocking"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "compliance"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "NFPA-701"
+  ],
+  "regulations": [
+    "CA-PROP65"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 80000,
+    "unit": "片",
+    "fobUsd": 30
+  },
+  "metrics": [
+    {
+      "metric": "afterflame-drip-s",
+      "before": 8.5,
+      "after": 0,
+      "target": 2.0,
+      "headline": true
+    },
+    {
+      "metric": "weight-loss",
+      "before": 58,
+      "after": 18,
+      "target": 40
+    },
+    {
+      "metric": "blocking-grade",
+      "before": 1,
+      "after": 5,
+      "target": 4
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 0.8,
+      "note": "零售款全部质量原因；涂层相关 0.5%"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "退运、补焙烘（到港、在厂与在库面料）、报废与复测",
+        160000
+      ],
+      [
+        "酒店项目重新织造与延期补偿",
+        520000
+      ]
+    ],
+    "totalUsd": 680000,
+    "allocation": "退运、补焙烘、报废与复测由涂层厂承担；酒店项目重新织造与延期补偿由品牌方承担"
+  },
+  "disposition": [
+    {
+      "scope": "到港粘连损坏",
+      "quantity": 2600,
+      "unit": "片",
+      "decision": "scrap",
+      "rationale": "涂层撕破"
+    },
+    {
+      "scope": "到港其余",
+      "quantity": 17400,
+      "unit": "片",
+      "decision": "redeploy",
+      "rationale": "补焙烘复测合格后转零售，不作阻燃声明"
+    },
+    {
+      "scope": "在厂零售成片（135℃ 涂层，未出运）",
+      "quantity": 12000,
+      "unit": "片",
+      "decision": "rework",
+      "rationale": "网带烘箱补焙烘，每 1,000 片抽 5 片复测抗粘连与洗涤合格后作零售款出运"
+    },
+    {
+      "scope": "在库已涂层面料（原酒店剩余 10,000 片用量）",
+      "quantity": 10000,
+      "unit": "片",
+      "decision": "reprocess",
+      "rationale": "普通涤纶不能用于酒店；成卷连续焙烘机补焙烘、按卷复测合格后转作零售款面料"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

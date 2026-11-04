@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-001",
+  "legacyId": "CASE_HT_01",
+  "title": "400TC 埃及棉贡缎床品撕破强力与接缝滑移",
+  "summary": "换机提温造成过度交联，撕破强力跌至 1.4 lbf；硅油过量与窄缝份造成接缝滑移。按整理批分档处置，并按实际 400TC 标示。",
+  "domain": "home-textile",
+  "product": "床品四件套",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "tear-strength",
+    "seam-slippage"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "sewing",
+    "compliance"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D1424",
+    "ASTM-D1683",
+    "AATCC-124",
+    "AATCC-112",
+    "ASTM-D3775"
+  ],
+  "regulations": [
+    "FTC-ACT-5"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 50000,
+    "unit": "套",
+    "fobUsd": 75
+  },
+  "metrics": [
+    {
+      "metric": "tear-strength-lbf",
+      "before": 1.4,
+      "after": 3.9,
+      "target": 3.0,
+      "note": "纬向",
+      "headline": true
+    },
+    {
+      "metric": "seam-opening-load-lbf",
+      "before": 5.8,
+      "after": 26.5,
+      "target": 15
+    },
+    {
+      "metric": "dp-grade",
+      "before": 4.2,
+      "after": 3.6,
+      "target": 3.5
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 0.3
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "18,000 套成品（实际成本，扣除约 35% 残值）",
+        643500
+      ],
+      [
+        "90,000 米不合格面料（实际成本，扣除约 20% 残值）",
+        230400
+      ],
+      [
+        "剩余 32,000 套 5% 延误折扣",
+        120000
+      ],
+      [
+        "复测、加急与管理",
+        76100
+      ]
+    ],
+    "totalUsd": 1070000,
+    "allocation": "依合同由擅自更改整理参数的染厂承担；结案时已回收 $640,000，其余 $430,000 分 6 个月抵扣"
+  },
+  "disposition": [
+    {
+      "scope": "合格整理批面料",
+      "quantity": 30000,
+      "unit": "米",
+      "decision": "release",
+      "rationale": "撕破 3.0–3.3 lbf"
+    },
+    {
+      "scope": "不合格面料",
+      "quantity": 90000,
+      "unit": "米",
+      "decision": "downgrade",
+      "rationale": "交联损伤不可逆，售作非床品用途"
+    },
+    {
+      "scope": "已包装成品",
+      "quantity": 18000,
+      "unit": "套",
+      "decision": "downgrade",
+      "rationale": "去标作次品，按 FTC 重新标注"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

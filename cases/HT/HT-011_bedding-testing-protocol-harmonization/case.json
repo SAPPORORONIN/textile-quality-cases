@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-011",
+  "legacyId": null,
+  "title": "床品测试协议统一化：从碎片化测试到品类测试矩阵",
+  "summary": "床品品类（床单、被芯、枕芯、床垫保护套、床裙）缺乏统一的测试协议，不同采购员凭经验指定测试项，导致遗漏关键测试或重复测试。建立品类测试矩阵，按法规/客户/行业三层分级，减少测试遗漏的同时降低 18% 的测试费用。",
+  "domain": "home-textile",
+  "product": "床品全品类",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance",
+    "lab-measurement"
+  ],
+  "disciplines": [
+    "compliance",
+    "lab"
+  ],
+  "tools": [
+    "PDCA",
+    "Pareto"
+  ],
+  "standards": [
+    "ASTM-D3776",
+    "ASTM-D5034",
+    "ASTM-D1424",
+    "ASTM-D3786",
+    "AATCC-135",
+    "AATCC-61",
+    "AATCC-20",
+    "AATCC-20A",
+    "AATCC-8",
+    "AATCC-112",
+    "ASTM-D3512"
+  ],
+  "regulations": [
+    "CFR-16-1632",
+    "CFR-16-1610",
+    "CPSIA-101-LEAD",
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 88.7,
+      "after": 94.8,
+      "target": 93,
+      "headline": true,
+      "note": "床品品类 FTR"
+    },
+    {
+      "metric": "qa-cost-net",
+      "before": 285000,
+      "after": 234000,
+      "note": "年度第三方测试费用（床品品类）——仅含送检费，不含内部 QA 人力与差旅"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

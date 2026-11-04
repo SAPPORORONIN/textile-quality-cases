@@ -1,0 +1,13 @@
+{
+  "name": "textile-quality-case-library",
+  "version": "2.0.2",
+  "private": true,
+  "type": "module",
+  "description": "美国市场纺织服装家纺质量案例库：结构化事实 + 叙述 + 注册表 + 治理校验",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/validate.mjs && node scripts/build.mjs",
+    "build:force": "node scripts/build.mjs",
+    "test": "node scripts/selftest.mjs"
+  }
+}

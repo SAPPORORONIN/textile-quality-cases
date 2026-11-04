@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-008",
+  "legacyId": "CASE_APP_08",
+  "title": "大码女西装放码失真与动态试穿受限产前拦截",
+  "summary": "固定厘米等量放码导致大码段袖窿与胸宽失衡。分段放码并用 16 人动态试穿验证。",
+  "domain": "apparel",
+  "product": "女西装",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "fit"
+  ],
+  "disciplines": [
+    "design-pdd"
+  ],
+  "tools": [
+    "Fishbone"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 48000,
+    "unit": "件",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "dynamic-discomfort",
+      "before": 42,
+      "after": 6,
+      "note": "5/12 ➔ 1/16",
+      "headline": true
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

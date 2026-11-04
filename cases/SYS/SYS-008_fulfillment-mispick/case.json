@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-008",
+  "legacyId": "CASE_SYS_08",
+  "title": "仓库拣配错发、套装缺件与退货闭环",
+  "summary": "相似 SKU 分区、组件扫码与三点复核，双仓试点验证。",
+  "domain": "systemic",
+  "product": "家居服套装",
+  "stage": "shipment",
+  "caseType": "ci",
+  "failureModes": [
+    "fulfillment-error"
+  ],
+  "disciplines": [
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "misship-return-rate",
+      "before": 2.7,
+      "after": 0.6,
+      "note": "A、B 试点仓，退货窗口关闭后统计；对照仓 1.2% → 1.1%",
+      "headline": true
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

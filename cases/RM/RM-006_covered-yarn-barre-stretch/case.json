@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-006",
+  "legacyId": null,
+  "title": "弹力包芯纱批次混用导致针织面料横档与尺寸不稳定",
+  "summary": "两批氨纶丝线密度不同（20D 与 30D）的锦纶/氨纶包芯纱在织厂仓库混放后混纬编织，染色后出现明显横档色差与拉伸回复率不一致。已织面料按横档严重度分级处置；纱线仓库按批次隔离并增加入库丝线密度抽测。",
+  "domain": "raw-material",
+  "product": "锦纶/氨纶弹力针织面料",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "color-expectation",
+    "dimensional-change"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "8D",
+    "Fishbone"
+  ],
+  "standards": [
+    "AATCC-135",
+    "AATCC-EP6",
+    "ASTM-D2244"
+  ],
+  "regulations": [
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 25,
+    "unit": "吨面料",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "elongation-retention",
+      "before": 72,
+      "after": 91,
+      "target": 85,
+      "headline": true,
+      "note": "经向 50% 定伸长，10 次洗烘后"
+    },
+    {
+      "metric": "area-shrinkage",
+      "before": 8.2,
+      "after": 3.5,
+      "target": 5,
+      "note": "AATCC 135 程序 (1)(V)(Aiii)，1 次洗烘后"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "3.6 吨严重横档面料报废",
+        46800
+      ],
+      [
+        "4.2 吨轻微横档面料降级（按 FOB 扣除约 50% 残值）",
+        27300
+      ],
+      [
+        "补织 3.6 吨面料（纱线 + 织造 + 染整）",
+        50400
+      ]
+    ],
+    "totalUsd": 124500,
+    "allocation": "织厂承担：仓库管理失误导致混纱，织厂赔付报废面料成本与补织费用；降级损失由品牌与织厂按合同 6:4 分担"
+  },
+  "disposition": [
+    {
+      "scope": "已染面料",
+      "quantity": 3.6,
+      "unit": "吨",
+      "decision": "scrap",
+      "rationale": "横档间距 < 5 cm、色差目视达 3.5 级，裁剪无法避开；氨纶丝线密度不同导致不同区域上染量差异，不可通过追加染整消除"
+    },
+    {
+      "scope": "已染面料",
+      "quantity": 4.2,
+      "unit": "吨",
+      "decision": "downgrade",
+      "rationale": "横档间距 > 15 cm、色差目视 4.0 级，裁剪排料可部分避开；转用于深色内搭与运动背心，成衣后目视不明显"
+    },
+    {
+      "scope": "已染面料",
+      "quantity": 17.2,
+      "unit": "吨",
+      "decision": "release",
+      "rationale": "未混纱批次，灯箱检验 D65 与 CWF 下无可见横档，拉伸回复率与尺寸合格"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

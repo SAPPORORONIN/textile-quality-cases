@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-005",
+  "legacyId": "CASE_SYS_05",
+  "title": "多工厂混批追溯断链与模拟召回",
+  "summary": "统一批次主键与父子关系，关键节点扫码，用无预告模拟召回验证。",
+  "domain": "systemic",
+  "product": "基础 T 恤",
+  "stage": "production",
+  "caseType": "system",
+  "failureModes": [
+    "traceability"
+  ],
+  "disciplines": [
+    "logistics-ecommerce",
+    "sourcing"
+  ],
+  "tools": [
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "trace-time-hours",
+      "before": 216,
+      "after": 6,
+      "headline": true,
+      "display": {
+        "before": "9 天",
+        "after": "6 小时"
+      },
+      "note": "正向追溯（染色批→成衣批、箱号、出货单），第 2 轮无预告演练"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": "追溯定位 9 天 ➔ 6 小时",
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

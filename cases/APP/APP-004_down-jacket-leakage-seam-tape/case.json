@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-004",
+  "legacyId": "CASE_APP_04",
+  "title": "防水羽绒服内胆钻绒与外壳压胶静水压失效",
+  "summary": "高速缝纫针温接近锦纶 6 熔点造成针孔熔扩；膜面柔软剂残留导致压胶假粘。降速细针、膜面达因管控与胶带相容性 DOE；回收 9,000 件内胆羽绒。",
+  "domain": "apparel",
+  "product": "防水羽绒服",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "down-leakage",
+    "waterproofing",
+    "coating-delamination"
+  ],
+  "disciplines": [
+    "sewing",
+    "raw-material"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "AATCC-127",
+    "IDFB-TEST-RULES",
+    "AATCC-22"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 40000,
+    "unit": "件",
+    "fobUsd": 85
+  },
+  "metrics": [
+    {
+      "metric": "hydrostatic-mm",
+      "before": 1800,
+      "after": 9000,
+      "target": 7000,
+      "note": "接缝，洗前",
+      "headline": true
+    },
+    {
+      "metric": "downproof-count",
+      "before": 48,
+      "after": 6,
+      "target": 10
+    },
+    {
+      "metric": "quality-return-rate",
+      "after": 1.0,
+      "note": "全部质量原因（含保修）；钻绒、漏水相关 0.6%"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "报废外壳 12,000 件",
+        210000
+      ],
+      [
+        "羽绒回收与重新检测",
+        45000
+      ],
+      [
+        "拆解内胆 9,000 件的防绒面料与缝制工时",
+        81000
+      ],
+      [
+        "约 540 kg 回收羽绒由 800 FP 转 750 FP 的价差",
+        10800
+      ],
+      [
+        "延误与部分空运",
+        60000
+      ]
+    ],
+    "totalUsd": 406800,
+    "allocation": "外壳损失面料厂 60% / 成衣厂 40%；内胆返工、内胆面料工时与羽绒降级价差由成衣厂承担"
+  },
+  "disposition": [
+    {
+      "scope": "已压胶外壳",
+      "quantity": 12000,
+      "unit": "件",
+      "decision": "scrap",
+      "rationale": "撕胶会损伤 PU 膜"
+    },
+    {
+      "scope": "已充绒内胆",
+      "quantity": 9000,
+      "unit": "件",
+      "decision": "redeploy",
+      "rationale": "回收羽绒按批复测，≥ 800 FP 回用本款，其余转 750 FP 产品"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

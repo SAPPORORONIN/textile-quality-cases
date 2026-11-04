@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-010",
+  "legacyId": "CASE_APP_10",
+  "title": "针织家居服屏幕色差、同色异谱与套装配色退货",
+  "summary": "拍摄未校色、套装跨缸配货、低饱和色在家用暖光下同色异谱，三因素叠加。",
+  "domain": "apparel",
+  "product": "针织家居服",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "color-expectation",
+    "metamerism"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-EP9",
+    "AATCC-EP6"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "color-return-rate",
+      "before": 3.2,
+      "after": 1.4,
+      "headline": true
+    },
+    {
+      "metric": "metamerism-index",
+      "before": 1.6,
+      "after": 0.4,
+      "note": "灰紫，D65 → A；鼠尾草绿 1.4 → 0.5"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

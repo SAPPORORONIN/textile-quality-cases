@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-005",
+  "legacyId": null,
+  "title": "热熔胶粘合衬水洗起泡脱层与前襟变形",
+  "summary": "粘合衬供应商更换胶网型号未通知，胶点密度降低叠加粘合机温度传感器偏差，前襟衬和袖叉衬 3 次洗后起泡脱层。已粘合裁片分批剥离强力检测，不合格批次剥衬重压；辅料变更锁定流程写入供应商手册。",
+  "domain": "raw-material",
+  "product": "男士正装衬衫粘合衬",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "coating-delamination",
+    "dimensional-change"
+  ],
+  "disciplines": [
+    "trims",
+    "sewing",
+    "raw-material"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-135",
+    "AATCC-124"
+  ],
+  "regulations": [
+    "FTC-423"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 80000,
+    "unit": "件",
+    "fobUsd": 22
+  },
+  "metrics": [
+    {
+      "metric": "bond-peel-n",
+      "before": 2.8,
+      "after": 8.5,
+      "target": 6.0,
+      "headline": true,
+      "note": "180° 剥离，50 mm/min；洗 3 次后测试"
+    },
+    {
+      "metric": "dp-grade",
+      "before": 2.5,
+      "after": 3.5,
+      "target": 3.5,
+      "note": "AATCC 124，洗 3 次后"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "12,000 件剥衬重压工时与辅料",
+        36000
+      ],
+      [
+        "3,200 件降级（FOB 扣除约 45% 残值）",
+        38720
+      ],
+      [
+        "粘合机温度传感器校准与验证",
+        1800
+      ]
+    ],
+    "totalUsd": 76520,
+    "allocation": "粘合衬供应商承担辅料差价与剥衬重压工时；成衣厂承担设备校准与降级残值损失"
+  },
+  "disposition": [
+    {
+      "scope": "已粘合裁片",
+      "quantity": 12000,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "洗 3 次后剥离强力 2.5–4.8 N/cm（要求 ≥ 6.0），用蒸汽剥离后换正确规格粘合衬重压；每批抽 5 件洗 3 次后复测剥离强力 ≥ 6.0 N/cm 且目视无起泡后放行"
+    },
+    {
+      "scope": "已粘合裁片",
+      "quantity": 3200,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "前襟衬起泡伴随底布热损伤，蒸汽剥离后布面有不可逆压痕；在品牌奥特莱斯以工厂店价格销售，护理标签改为干洗"
+    },
+    {
+      "scope": "剩余未粘合裁片与后续生产",
+      "quantity": 64800,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "换回原规格粘合衬，粘合机校准后首件验证剥离强力 8.2–9.1 N/cm，洗 3 次后目视与剥离强力合格"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

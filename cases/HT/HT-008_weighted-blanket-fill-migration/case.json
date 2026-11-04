@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-008",
+  "legacyId": "CASE_HT_08",
+  "title": "重力毯填充珠迁移与格袋破裂产前验证",
+  "summary": "粒径分布过宽、袋格过大与按时间灌装，循环载荷后角区增重 31%。产前完成结构与灌装控制改进，并补充使用安全警示。",
+  "domain": "home-textile",
+  "product": "重力毯",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "fill-migration"
+  ],
+  "disciplines": [
+    "design-pdd",
+    "sewing",
+    "compliance"
+  ],
+  "tools": [
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [
+    "STATE-LAW-LABEL",
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 35000,
+    "unit": "床",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "corner-weight-deviation",
+      "before": 31,
+      "after": 7,
+      "headline": true,
+      "target": 10,
+      "note": "5 床均值，客户限值 ≤ 10%"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

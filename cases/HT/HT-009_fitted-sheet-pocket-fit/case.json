@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-009",
+  "legacyId": "CASE_HT_09",
+  "title": "床笠床垫厚度适配与页面信息",
+  "summary": "建立床垫厚度适配矩阵，深度档写入 SKU、箱唛与拣货规则。",
+  "domain": "home-textile",
+  "product": "床笠",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "fit",
+    "fulfillment-error"
+  ],
+  "disciplines": [
+    "logistics-ecommerce",
+    "design-pdd"
+  ],
+  "tools": [
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "fit-return-rate",
+      "before": 6.9,
+      "after": 2.8,
+      "headline": true
+    },
+    {
+      "metric": "misship-return-rate",
+      "before": 0.5,
+      "after": 0.1,
+      "note": "相邻深度档错发，按订单计"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

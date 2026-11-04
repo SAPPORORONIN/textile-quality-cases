@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-006",
+  "legacyId": "CASE_HT_06",
+  "title": "簇绒地毯拔绒、背胶粉化与湿摩擦串色",
+  "summary": "喂纱张力波动与背胶固化不足使簇绒拔出力仅 1.9 lbf，深色湿摩串色。变更后重做 16 CFR 1630 测试。",
+  "domain": "home-textile",
+  "product": "地毯",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "tuft-bind",
+    "colorfastness"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing",
+    "compliance"
+  ],
+  "tools": [
+    "8D",
+    "SPC"
+  ],
+  "standards": [
+    "ASTM-D1335",
+    "AATCC-165"
+  ],
+  "regulations": [
+    "CFR-16-1630-1631"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 24000,
+    "unit": "张",
+    "fobUsd": 50
+  },
+  "metrics": [
+    {
+      "metric": "tuft-bind-lbf",
+      "before": 1.9,
+      "after": 4.1,
+      "target": 3.0,
+      "headline": true
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": 4.1,
+      "after": 0.8
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "在库 6,500 张降级净损失",
+        190000
+      ],
+      [
+        "已售质量退货约 720 张（FOB）",
+        36000
+      ],
+      [
+        "退货物流与处理（实际支出）",
+        8640
+      ]
+    ],
+    "totalUsd": 234640,
+    "allocation": "地毯厂承担"
+  },
+  "disposition": [
+    {
+      "scope": "在库",
+      "quantity": 6500,
+      "unit": "张",
+      "decision": "downgrade",
+      "rationale": "背胶固化不足无法返修"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

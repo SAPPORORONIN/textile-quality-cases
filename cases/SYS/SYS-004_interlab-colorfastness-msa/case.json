@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-004",
+  "legacyId": "CASE_SYS_04",
+  "title": "多实验室色牢度判定冲突与测量系统重建",
+  "summary": "统一方法版本与取样，控制摩擦布含水率，盲样比对与 kappa 评估。",
+  "domain": "systemic",
+  "product": "深色针织面料",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "lab-measurement"
+  ],
+  "disciplines": [
+    "lab"
+  ],
+  "tools": [
+    "MSA",
+    "Kappa"
+  ],
+  "standards": [
+    "AATCC-8",
+    "ISO-IEC-17025"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "interlab-agreement",
+      "before": 75,
+      "after": 94,
+      "note": "3 家实验室、每轮 32 个盲样，合格/不合格判定全部一致；kappa 0.48 → 0.87",
+      "headline": true
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-004",
+  "legacyId": "CASE_RM_03",
+  "title": "美利奴针织面料毡化缩水产前准入",
+  "summary": "标称可机洗却未做防毡缩处理，3 次洗后面积缩 12.6%。采用低氯防毡缩并按 TM31 思路验证护理标签。",
+  "domain": "raw-material",
+  "product": "美利奴针织面料",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "felting",
+    "dimensional-change"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "Fishbone"
+  ],
+  "standards": [
+    "ISO-6330",
+    "ISO-5077",
+    "ASTM-D3786",
+    "ASTM-D3512"
+  ],
+  "regulations": [
+    "FTC-423",
+    "FTC-300"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 42,
+    "unit": "吨面料",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "area-shrinkage",
+      "before": 12.6,
+      "after": 3.1,
+      "target": 5,
+      "headline": true,
+      "note": "ISO 6330 4G、平摊晾干，3 次洗后均值；10 次洗后 3.9–4.4%"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-007",
+  "legacyId": null,
+  "title": "再生棉开棉混杂异物与短纤率偏高导致纱疵",
+  "summary": "回收废旧服装机械开松后的再生棉纤维含有异色纤维、纽扣碎片与金属丝，短纤率偏高导致条干不匀与落絮。面料四分制评分 42 分/100 码，超出客户 28 分限值。产前拦截，增加二次开棉与金属探测，收紧短纤率与杂质入厂检验标准后重新打样。",
+  "domain": "raw-material",
+  "product": "再生棉/原生棉混纺 T 恤面料",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "foreign-object",
+    "lint-shedding"
+  ],
+  "disciplines": [
+    "raw-material"
+  ],
+  "tools": [
+    "Fishbone"
+  ],
+  "standards": [
+    "ASTM-D5430"
+  ],
+  "regulations": [
+    "FTC-260",
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 35,
+    "unit": "吨面料",
+    "fobUsd": null
+  },
+  "metrics": [
+    {
+      "metric": "fabric-defect-points",
+      "before": 42,
+      "after": 18,
+      "target": 28,
+      "headline": true,
+      "note": "ASTM D5430 四分制，每 100 线性码"
+    },
+    {
+      "metric": "lint-loss",
+      "before": 4.8,
+      "after": 2.1,
+      "target": 3.0,
+      "note": "客户称重法，3 次洗涤累计"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

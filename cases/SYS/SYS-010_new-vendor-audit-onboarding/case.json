@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-010",
+  "legacyId": null,
+  "title": "新供应商质量审核与分阶段准入模型",
+  "summary": "新工厂无结构化质量评估即投入量产，首季 FTR 仅 74%、质量退货率 3.1%。建立桌面筛查-现场审核-试单验证-正式准入四阶段流程与评分模型，辅以导师制护航首季，首季 FTR 提升至 88%。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing",
+    "compliance"
+  ],
+  "tools": [
+    "Pareto"
+  ],
+  "standards": [],
+  "regulations": [
+    "CPSC-CERT-EFILING"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 74,
+      "after": 88,
+      "target": 85,
+      "headline": true,
+      "note": "新工厂首季（投产前 12 个月内准入的工厂），稽核口径"
+    },
+    {
+      "metric": "vendor-quality-return-rate",
+      "before": 3.1,
+      "after": 1.5,
+      "target": 2.0,
+      "note": "新工厂首季出货"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

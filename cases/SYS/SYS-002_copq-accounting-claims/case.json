@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-002",
+  "legacyId": "CASE_SYS_02",
+  "title": "COPQ 核算、故障成本削减与供应商追偿",
+  "summary": "PAF 框架统一口径，故障成本与追偿分开报告，并监控 FOB 防止成本转嫁。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "production",
+  "caseType": "system",
+  "failureModes": [
+    "cost-of-quality"
+  ],
+  "disciplines": [
+    "finance",
+    "sourcing"
+  ],
+  "tools": [
+    "Pareto"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "copq-gross",
+      "before": 2100000,
+      "after": 1350000,
+      "headline": true
+    },
+    {
+      "metric": "claim-recovery-rate",
+      "before": 28,
+      "after": 94.2
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

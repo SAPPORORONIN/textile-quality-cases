@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-012",
+  "legacyId": null,
+  "title": "家纺电商退货数据治理与质量改善闭环",
+  "summary": "家纺电商退货率高但退货原因标签颗粒度不足（65% 标记为'其他'），无法驱动质量改善。重建退货原因分类体系，引入照片+文字的退货质量审核流程，建立退货数据到 8D 的闭环。退货率从 14.2% 降至 9.8%，质量相关退货占比从未知降至可度量的 38%。",
+  "domain": "home-textile",
+  "product": "家纺电商全品类",
+  "stage": "post-market",
+  "caseType": "system",
+  "failureModes": [
+    "returns-data-quality"
+  ],
+  "disciplines": [
+    "logistics-ecommerce",
+    "lab"
+  ],
+  "tools": [
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "total-return-rate",
+      "before": 14.2,
+      "after": 9.8,
+      "target": 10,
+      "headline": false,
+      "note": "家纺电商全品类退货率——退货率受电商运营、描述准确度等非质量因素影响，不单独作为质量 KPI"
+    },
+    {
+      "metric": "attributable-return-share",
+      "before": 35,
+      "after": 65,
+      "target": 80,
+      "headline": true,
+      "note": "可归因退货占比——退货数据治理的核心目标是提升退货原因的可追溯性"
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": null,
+      "after": 3.7,
+      "note": "改善后质量相关退货率（9.8% × 38% ≈ 3.7%），改善前无法度量"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

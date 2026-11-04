@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-009",
+  "legacyId": null,
+  "title": "面料供应商质量发展计划：从纠正驱动到能力提升",
+  "summary": "品牌面料供应商质量管理停留在'出了问题发 8D'的纠正模式，缺乏主动的供应商能力建设。建立面料供应商质量发展计划（SQD），对 3 家战略面料厂导入 SPC 能力，在线监控克重和色差，将面料来料合格率从 82% 提升至 95%。",
+  "domain": "raw-material",
+  "product": "面料全品类",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing",
+    "dyeing-finishing",
+    "raw-material"
+  ],
+  "tools": [
+    "SPC",
+    "MSA",
+    "PDCA",
+    "Pareto"
+  ],
+  "standards": [
+    "ASTM-D3776",
+    "AATCC-173"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 82,
+      "after": 95,
+      "target": 93,
+      "headline": true,
+      "note": "3 家战略面料厂的来料合格率——此处借用 ftr-audited 口径（品牌 QA/IQC 首次判定），非成衣终检"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

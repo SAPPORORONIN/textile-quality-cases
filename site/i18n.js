@@ -1,0 +1,188 @@
+window.I18N = (() => {
+  const dict = {
+    zh: {
+      brand: '纺织服装家纺质量案例库',
+      'tab.cases': '案例',
+      'tab.registry': '注册表',
+      'tab.governance': '治理与健康度',
+      'tab.playbooks': '模板与 SOP',
+      'tab.interview': '面试',
+      notice: '全部案例为<strong>示例案例</strong>：情景与数字用于教学，量级参考行业常见水平，不对应真实企业或事件；法规与标准条目为工作参考，不构成法律意见。',
+      'search.placeholder': '搜索标题、摘要、标准、失效模式…',
+      'reg.standards': '标准与方法',
+      'reg.regulations': '法规',
+      'reg.metrics': '指标口径',
+      'reg.filter': '筛选…',
+      'gov.title': '治理文件',
+      'build.info': (v, d, n) => `v${v} · 构建于 ${d} · ${n} 个案例`,
+      'filter.all': (label) => `${label}：全部`,
+      'filter.domain': '领域',
+      'filter.stage': '阶段',
+      'filter.type': '类型',
+      'filter.failure': '失效模式',
+      'filter.review': '评审',
+      'no.match': '没有匹配的案例。',
+      'no.catalog': '未找到 dist/catalog.js，请先运行 <code>npm run build</code>。',
+      'case.illustrative': '示例案例',
+      'fact.product': '产品',
+      'fact.order': '订单',
+      'fact.provenance': '来源属性',
+      'fact.version': '版本',
+      'fact.updated': '更新',
+      'fact.failureModes': '失效模式',
+      'fact.standards': '标准',
+      'fact.regulations': '法规',
+      'fact.metrics.title': '指标（case.json 唯一来源）',
+      'fact.metrics.th': ['指标', '同类基线', '改善前', '改善后', '目标/要求', '单位', '备注'],
+      'fact.ledger': '损失台账',
+      'fact.ledger.total': '合计',
+      'fact.ledger.borne': '承担',
+      'fact.disposition': '处置决策',
+      'fact.disposition.th': ['范围', '数量', '决策', '理由'],
+      'fact.review': '评审状态',
+      'fact.techReviewer': '技术评审',
+      'fact.compReviewer': '合规评审',
+      'reg.status.withdrawn': (y) => `已撤销${y ? ' ' + y : ''}`,
+      'reg.status.active': '现行',
+      'reg.status.rescinded': '已废止',
+      'reg.status.inforce': '现行',
+      'reg.unverified': '未核实',
+      'reg.toVerify': '待核实',
+      'reg.std.th': ['ID', '机构 / 编号', '名称', '类型', '状态', '核实', '被引用', '说明'],
+      'reg.regs.th': ['条款', '名称', '适用', '要点', '状态', '核实', '被引用'],
+      'reg.regs.source': '来源',
+      'reg.met.th': ['ID', '名称', '单位', '类型', '方向', 'Cpk', '定义'],
+      'reg.met.dir': { higher: '越高越好', lower: '越低越好', target: '达到目标值' },
+      'reg.met.cpk.yes': '允许',
+      'reg.met.cpk.no': '禁止',
+      'health.title': '治理健康度',
+      'health.errors': '校验错误',
+      'health.warnings': '校验警告',
+      'health.approved': '已批准案例',
+      'health.unreg': '待核实法规',
+      'health.unstd': '待核实标准',
+      'health.owner': '法规负责人',
+      'health.owner.yes': '已指定',
+      'health.owner.no': '未指定',
+      'health.unverified.title': '被案例引用、尚待核实的法规（优先处理）',
+      'health.unverified.th': ['条款', '被引用次数'],
+      'health.unverified.none': '无',
+      'health.warnings.summary': (n) => `全部校验警告（${n}）`,
+      'health.errors.title': '校验错误',
+      'tx.domains': { apparel: '服装', 'home-textile': '家纺', 'raw-material': '原料与辅料', systemic: '体系与供应链' },
+      'tx.stages': { development: '产前/开发', production: '产中', shipment: '出货/到港', 'post-market': '售后' },
+      'tx.caseTypes': { incident: '质量事故 (8D)', gate: '产前门禁拦截', ci: '持续改进', system: '体系建设' },
+      'tx.reviewStatuses': { draft: '草稿', 'technical-review': '技术评审中', 'compliance-review': '合规评审中', approved: '已批准', retired: '已退役' },
+      'tx.provenance': { illustrative: '示例案例：情景与数字为教学用途编写，量级参考行业常见水平，不对应任何真实企业或事件', composite: '合成案例：由多个真实经历去标识化后合并改写，数字已调整', 'anonymized-real': '去标识化真实案例：经授权并去除可识别信息，关键数字有内部证据存档' },
+      'tx.failureModes': { pilling: '起毛起球', 'seam-failure': '接缝开裂/爆线', 'seam-slippage': '接缝滑移', 'tear-strength': '撕破强力不足', colorfastness: '色牢度', metamerism: '同色异谱', 'color-expectation': '颜色预期/色阶', 'dimensional-change': '尺寸变化/扭斜', 'chlorine-degradation': '耐氯衰减', retroreflection: '逆反射衰减', 'coating-delamination': '涂层/胶条脱层', blocking: '涂层粘连', waterproofing: '防水失效', 'down-leakage': '钻绒', microbial: '微生物/卫生指标', odor: '异味', 'chemical-residue': '化学残留/pH', flammability: '燃烧性能', 'regulatory-children': '儿童产品法规违规', 'lint-shedding': '落絮掉毛', absorbency: '吸水性', corrosion: '金属腐蚀', 'attachment-strength': '附件牢度', felting: '毡化缩水', 'print-durability': '印花耐久', 'tuft-bind': '簇绒牢度', 'elastic-fatigue': '松紧带疲劳', 'fill-migration': '填充物迁移', fit: '版型/尺码适配', unboxing: '开箱体验/蓬松恢复', 'fulfillment-error': '仓配错发漏发', 'returns-data-quality': '退货数据质量', 'lab-measurement': '实验室测量一致性', traceability: '批次追溯', 'foreign-object': '异物/断针', 'supplier-governance': '供应商治理', 'cost-of-quality': '质量成本' },
+      'tx.dispositionDecisions': { release: '检验合格放行', rework: '返工后复检放行', reprocess: '回修/再加工（面料、羽绒等）', redeploy: '转用于其他产品或渠道（如实标示）', downgrade: '降级/去标出售', 'return-to-vendor': '退回供应商', 'reject-to-supplier': '拒收，由供应商承担', recycle: '去标后回收处理', scrap: '报废', 'recondition-under-supervision': '经监管机构批准的监管下整改', redesign: '未生产部分按工程变更重新设计' },
+    },
+    en: {
+      brand: 'Textile, Apparel & Home Textile Quality Case Library',
+      'tab.cases': 'Cases',
+      'tab.registry': 'Registries',
+      'tab.governance': 'Governance & Health',
+      'tab.playbooks': 'Playbooks & SOPs',
+      'tab.interview': 'Interview',
+      notice: 'All cases are <strong>illustrative</strong>: scenarios and numbers are for teaching, with magnitudes based on common industry levels, and do not correspond to any real company or event. Regulation and standard entries are a working reference and do not constitute legal advice.',
+      'search.placeholder': 'Search titles, summaries, standards, failure modes…',
+      'reg.standards': 'Standards & methods',
+      'reg.regulations': 'Regulations',
+      'reg.metrics': 'Metric definitions',
+      'reg.filter': 'Filter…',
+      'gov.title': 'Governance documents',
+      'build.info': (v, d, n) => `v${v} · built ${d} · ${n} cases`,
+      'filter.all': (label) => `${label}: all`,
+      'filter.domain': 'Domain',
+      'filter.stage': 'Stage',
+      'filter.type': 'Type',
+      'filter.failure': 'Failure mode',
+      'filter.review': 'Review',
+      'no.match': 'No matching cases.',
+      'no.catalog': 'dist/catalog.js not found. Run <code>npm run build</code> first.',
+      'case.illustrative': 'Illustrative case',
+      'fact.product': 'Product',
+      'fact.order': 'Order',
+      'fact.provenance': 'Provenance',
+      'fact.version': 'Version',
+      'fact.updated': 'updated',
+      'fact.failureModes': 'Failure modes',
+      'fact.standards': 'Standards',
+      'fact.regulations': 'Regulations',
+      'fact.metrics.title': 'Metrics (case.json is the single source)',
+      'fact.metrics.th': ['Metric', 'Peer baseline', 'Before', 'After', 'Target / requirement', 'Unit', 'Note'],
+      'fact.ledger': 'Loss ledger',
+      'fact.ledger.total': 'Total',
+      'fact.ledger.borne': 'Borne by',
+      'fact.disposition': 'Disposition decisions',
+      'fact.disposition.th': ['Scope', 'Quantity', 'Decision', 'Rationale'],
+      'fact.review': 'Review status',
+      'fact.techReviewer': 'technical reviewer',
+      'fact.compReviewer': 'compliance reviewer',
+      'reg.status.withdrawn': (y) => `Withdrawn${y ? ' ' + y : ''}`,
+      'reg.status.active': 'Active',
+      'reg.status.rescinded': 'Rescinded',
+      'reg.status.inforce': 'In force',
+      'reg.unverified': 'Unverified',
+      'reg.toVerify': 'To verify',
+      'reg.std.th': ['ID', 'Org / code', 'Title', 'Kind', 'Status', 'Verified', 'Cited by', 'Notes'],
+      'reg.regs.th': ['Citation', 'Title', 'Applies to', 'Key requirements', 'Status', 'Verified', 'Cited by'],
+      'reg.regs.source': 'Source',
+      'reg.met.th': ['ID', 'Label', 'Unit', 'Type', 'Direction', 'Cpk', 'Definition'],
+      'reg.met.dir': { higher: 'Higher is better', lower: 'Lower is better', target: 'Hit the target' },
+      'reg.met.cpk.yes': 'Allowed',
+      'reg.met.cpk.no': 'Not allowed',
+      'health.title': 'Governance health',
+      'health.errors': 'Validation errors',
+      'health.warnings': 'Validation warnings',
+      'health.approved': 'Approved cases',
+      'health.unreg': 'Regulations to verify',
+      'health.unstd': 'Standards to verify',
+      'health.owner': 'Regulation owner',
+      'health.owner.yes': 'Assigned',
+      'health.owner.no': 'Not assigned',
+      'health.unverified.title': 'Unverified regulations cited by cases (handle first)',
+      'health.unverified.th': ['Citation', 'Times cited'],
+      'health.unverified.none': 'None',
+      'health.warnings.summary': (n) => `All validation warnings (${n})`,
+      'health.errors.title': 'Validation errors',
+      'tx.domains': { apparel: 'Apparel', 'home-textile': 'Home Textiles', 'raw-material': 'Materials & Trims', systemic: 'Systems & Supply Chain' },
+      'tx.stages': { development: 'Pre-production / Development', production: 'In production', shipment: 'Shipment / Arrival', 'post-market': 'Post-market' },
+      'tx.caseTypes': { incident: 'Quality incident (8D)', gate: 'Pre-production gate catch', ci: 'Continuous improvement', system: 'System building' },
+      'tx.reviewStatuses': { draft: 'Draft', 'technical-review': 'In technical review', 'compliance-review': 'In compliance review', approved: 'Approved', retired: 'Retired' },
+      'tx.provenance': { illustrative: 'Illustrative case: scenario and numbers written for teaching; magnitudes reflect common industry levels and do not correspond to any real company or event', composite: 'Composite case: several real experiences, de-identified and merged, with numbers adjusted', 'anonymized-real': 'Anonymized real case: used with authorization and stripped of identifying information; key numbers are backed by archived internal evidence' },
+      'tx.failureModes': { pilling: 'Pilling', 'seam-failure': 'Seam failure / burst stitching', 'seam-slippage': 'Seam slippage', 'tear-strength': 'Insufficient tear strength', colorfastness: 'Colorfastness', metamerism: 'Metamerism', 'color-expectation': 'Color expectation / shade banding', 'dimensional-change': 'Dimensional change / skew', 'chlorine-degradation': 'Chlorine degradation', retroreflection: 'Retroreflectivity loss', 'coating-delamination': 'Coating / tape delamination', blocking: 'Coating blocking', waterproofing: 'Waterproofing failure', 'down-leakage': 'Down leakage', microbial: 'Microbial / hygiene', odor: 'Odor', 'chemical-residue': 'Chemical residue / pH', flammability: 'Flammability', 'regulatory-children': "Children's product regulatory violation", 'lint-shedding': 'Lint shedding', absorbency: 'Absorbency', corrosion: 'Metal corrosion', 'attachment-strength': 'Attachment strength', felting: 'Felting shrinkage', 'print-durability': 'Print durability', 'tuft-bind': 'Tuft bind', 'elastic-fatigue': 'Elastic fatigue', 'fill-migration': 'Fill migration', fit: 'Fit / sizing', unboxing: 'Unboxing / loft recovery', 'fulfillment-error': 'Fulfillment errors (mis-picks, short-ships)', 'returns-data-quality': 'Returns data quality', 'lab-measurement': 'Lab measurement consistency', traceability: 'Lot traceability', 'foreign-object': 'Foreign objects / broken needles', 'supplier-governance': 'Supplier governance', 'cost-of-quality': 'Cost of quality' },
+      'tx.dispositionDecisions': { release: 'Release after passing inspection', rework: 'Rework, re-inspect, then release', reprocess: 'Reprocess (fabric, down, etc.)', redeploy: 'Redeploy to another product or channel (accurately labeled)', downgrade: 'Downgrade / sell with labels removed', 'return-to-vendor': 'Return to vendor', 'reject-to-supplier': 'Reject; supplier bears the cost', recycle: 'Remove labels and recycle', scrap: 'Scrap', 'recondition-under-supervision': 'Recondition under regulator-approved supervision', redesign: 'Redesign unproduced quantity via engineering change' },
+    },
+  };
+
+  let lang = 'zh';
+  try { const saved = localStorage.getItem('ql-lang'); if (saved === 'en' || saved === 'zh') lang = saved; } catch {}
+
+  const t = (key, ...args) => {
+    const v = dict[lang][key];
+    if (typeof v === 'function') return v(...args);
+    return v || key;
+  };
+
+  const setLang = (l) => {
+    lang = l;
+    try { localStorage.setItem('ql-lang', l); } catch {}
+    document.documentElement.lang = l === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-i18n]').forEach((el) => {
+      const k = el.dataset.i18n;
+      if (dict[lang][k]) el.innerHTML = dict[lang][k];
+    });
+    document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      const k = el.dataset.i18nPlaceholder;
+      if (dict[lang][k]) el.placeholder = dict[lang][k];
+    });
+    const btn = document.getElementById('langToggle');
+    if (btn) btn.textContent = lang === 'zh' ? 'EN' : '中文';
+  };
+
+  const getLang = () => lang;
+  const init = () => setLang(lang);
+
+  return { t, setLang, getLang, init };
+})();

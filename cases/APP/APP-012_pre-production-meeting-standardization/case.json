@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-012",
+  "legacyId": null,
+  "title": "产前会（PP Meeting）标准化：从走形式到风险拦截引擎",
+  "summary": "产前会流于形式、缺乏标准化议程和追踪机制，导致面辅料配伍问题、工艺风险和法规要求在量产后才暴露。建立标准化产前会 SOP（含必检清单、风险红旗规则、行动追踪），配合 QCP 控制计划同步输出，将产前阶段拦截率从 22% 提升至 68%。",
+  "domain": "apparel",
+  "product": "全品类成衣",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing",
+    "sewing",
+    "raw-material"
+  ],
+  "tools": [
+    "QCP",
+    "PFMEA",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 87.5,
+      "after": 94.2,
+      "target": 93,
+      "headline": true,
+      "note": "全品类加权平均"
+    },
+    {
+      "metric": "pre-production-interception-rate",
+      "before": 22,
+      "after": 68,
+      "note": "产前阶段拦截率"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

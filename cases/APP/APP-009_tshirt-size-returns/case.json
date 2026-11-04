@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-009",
+  "legacyId": "CASE_APP_09",
+  "title": "基础 T 恤尺码退货与推荐优化",
+  "summary": "统一退货原因编码，调整大码段胸围与页面尺码信息，并做 A/B 测试。",
+  "domain": "apparel",
+  "product": "基础 T 恤",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "fit",
+    "returns-data-quality"
+  ],
+  "disciplines": [
+    "design-pdd",
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "Pareto",
+    "A/B Test",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "size-return-rate",
+      "before": 8.6,
+      "after": 6.1,
+      "headline": true
+    },
+    {
+      "metric": "total-return-rate",
+      "before": 16.8,
+      "after": 14.5
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

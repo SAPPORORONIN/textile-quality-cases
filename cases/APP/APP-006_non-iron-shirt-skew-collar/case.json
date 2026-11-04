@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-006",
+  "legacyId": "CASE_APP_06",
+  "title": "免烫衬衫洗后扭斜、领围缩小与袖长漂移",
+  "summary": "纬斜未矫正、预缩波动，以及领衬被降本替换造成缩率不匹配。在库与在制品按测试分档处置，辅料替换纳入 ECN。",
+  "domain": "apparel",
+  "product": "免烫衬衫",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "dimensional-change"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "trims",
+    "sewing"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-135",
+    "AATCC-150",
+    "AATCC-179"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 58000,
+    "unit": "件",
+    "fobUsd": 25
+  },
+  "metrics": [
+    {
+      "metric": "garment-twist",
+      "before": 6.5,
+      "after": 1.8,
+      "target": 4,
+      "headline": true
+    },
+    {
+      "metric": "collar-change",
+      "before": -2.6,
+      "after": -0.8
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "DC 退回供应商 4,400 件（FOB）",
+        110000
+      ],
+      [
+        "DC 折扣渠道 5,200 件（FOB 的 40% 折让）",
+        52000
+      ],
+      [
+        "换领衬返工 4,300 件与复测（实际支出）",
+        19250
+      ],
+      [
+        "工厂降级 4,500 件（FOB 的 70%）",
+        78750
+      ]
+    ],
+    "totalUsd": 260000,
+    "allocation": "面料厂（纬斜、预缩）与成衣厂（领衬替换）按根因分担"
+  },
+  "disposition": [
+    {
+      "scope": "DC 纬斜 ≤ 3% 批次",
+      "quantity": 5200,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "扭斜合格但领围超差，折扣渠道并更新描述"
+    },
+    {
+      "scope": "DC 其余批次",
+      "quantity": 4400,
+      "unit": "件",
+      "decision": "return-to-vendor",
+      "rationale": "扭斜与领围均不合格"
+    },
+    {
+      "scope": "工厂领子未上身，纬斜 ≤ 3% 整理批",
+      "quantity": 4300,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "更换领衬；每整理批抽 5 件洗 3 次复测扭斜、领围、袖长，均满足客户要求后放行"
+    },
+    {
+      "scope": "工厂领子未上身，纬斜 > 3% 整理批",
+      "quantity": 2700,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "衣片已按斜向裁出，换领衬不能矫正扭斜"
+    },
+    {
+      "scope": "工厂已完成，抽测不合格",
+      "quantity": 1800,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "扭斜、领围或袖长不合格，降级"
+    },
+    {
+      "scope": "工厂已完成，抽测合格",
+      "quantity": 3200,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "扭斜、领围、袖长三项合格"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

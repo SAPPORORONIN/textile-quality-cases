@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-003",
+  "legacyId": "CASE_SYS_03",
+  "title": "供应商动态质量计分卡与配额联动",
+  "summary": "六维线性计分卡（唯一口径）、红线停单评审、配额受负荷率与集中度上限约束。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "development",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing"
+  ],
+  "tools": [
+    "Pareto"
+  ],
+  "standards": [],
+  "regulations": [
+    "UFLPA"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 86.9,
+      "after": 91.9,
+      "note": "74 家留存供应商固定队列",
+      "headline": true
+    },
+    {
+      "metric": "vendor-quality-return-rate",
+      "before": 1.6,
+      "after": 0.9,
+      "note": "全体；留存供应商自身改善约 0.47 个百分点"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

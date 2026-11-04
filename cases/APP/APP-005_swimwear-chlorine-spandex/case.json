@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-005",
+  "legacyId": "CASE_APP_05",
+  "title": "训练泳装氨纶耐氯衰减与湿态接缝开裂",
+  "summary": "面料厂私换普通氨纶，叠加定形过热与高温烘干，湿态拉伸时沿针孔撕裂；18,400 件库存无法补救去标回收。",
+  "domain": "apparel",
+  "product": "泳装",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "chlorine-degradation",
+    "colorfastness",
+    "seam-failure"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing",
+    "sewing"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "AATCC-162"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 150000,
+    "unit": "件",
+    "fobUsd": 14
+  },
+  "metrics": [
+    {
+      "metric": "elongation-retention",
+      "before": 62,
+      "after": 91,
+      "target": 85,
+      "headline": true
+    },
+    {
+      "metric": "quality-return-rate",
+      "baseline": 0.8,
+      "before": 5.2,
+      "after": 0.9
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "库存 18,400 件与撤回约 400 件（FOB）",
+        263200
+      ],
+      [
+        "已售质量退货约 3,100 件（FOB）",
+        43400
+      ],
+      [
+        "退货物流与客服处理（实际支出）",
+        28600
+      ]
+    ],
+    "totalUsd": 335200,
+    "allocation": "面料厂 80%（擅自替换氨纶、定形过热）/ 成衣厂 20%（高温烘干偏离工艺卡）"
+  },
+  "disposition": [
+    {
+      "scope": "工厂未出货",
+      "quantity": 18400,
+      "unit": "件",
+      "decision": "recycle",
+      "rationale": "氨纶牌号决定耐氯性，无法返工"
+    },
+    {
+      "scope": "首批未售撤回",
+      "quantity": 400,
+      "unit": "件",
+      "decision": "recycle",
+      "rationale": "同批普通氨纶，无法返工"
+    },
+    {
+      "scope": "已织染未裁的普通氨纶面料",
+      "quantity": 15,
+      "unit": "吨",
+      "decision": "reject-to-supplier",
+      "rationale": "普通氨纶不满足规格，面料厂承担"
+    },
+    {
+      "scope": "剩余未生产订单",
+      "quantity": 71600,
+      "unit": "件",
+      "decision": "redesign",
+      "rationale": "改用耐氯氨纶重新织造染整，泳池循环验证后生产"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-001",
+  "legacyId": "CASE_SYS_01",
+  "title": "从末端验货到供应商 DQA 自检认证与飞行稽核",
+  "summary": "盲样考核授权、飞行稽核用一致率与 kappa 管理 DQA；成果按同一工厂队列、稽核口径与全口径成本计，并单列转由工厂承担的成本。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "production",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing",
+    "lab"
+  ],
+  "tools": [
+    "Kappa",
+    "Pareto"
+  ],
+  "standards": [
+    "ANSI-ASQ-Z1.4"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 86.4,
+      "after": 95.1,
+      "target": 95,
+      "note": "38 家授权工厂同一队列",
+      "headline": true
+    },
+    {
+      "metric": "ftr-audited",
+      "before": 83.2,
+      "after": 88.7,
+      "note": "全体供应商，对照"
+    },
+    {
+      "metric": "ftr-self-reported",
+      "after": 98.6
+    },
+    {
+      "metric": "qa-cost-net",
+      "before": 2800000,
+      "after": 1914000,
+      "note": "全口径品牌支出，不含转由工厂承担的 DQA 人力约 $660K"
+    },
+    {
+      "metric": "release-wait-days",
+      "before": 3.8,
+      "after": 0.7,
+      "note": "38 家授权工厂覆盖的全部批次平均"
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": 1.8,
+      "after": 1.4,
+      "note": "38 家覆盖订单"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": "同队列稽核 FTR 86.4% ➔ 95.1% / 品牌验货支出年净节省约 $0.89M",
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

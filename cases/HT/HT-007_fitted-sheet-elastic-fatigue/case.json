@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-007",
+  "legacyId": "CASE_HT_07",
+  "title": "床笠松紧带疲劳与角位脱落",
+  "summary": "预拉伸比过高、包覆不足，且验证未覆盖合理可预见的中温烘干。换耐热老化松紧带并重建工艺窗口。",
+  "domain": "home-textile",
+  "product": "床笠",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "elastic-fatigue"
+  ],
+  "disciplines": [
+    "trims",
+    "sewing"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-135"
+  ],
+  "regulations": [
+    "FTC-423"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 60000,
+    "unit": "件",
+    "fobUsd": 14.5
+  },
+  "metrics": [
+    {
+      "metric": "elastic-recovery",
+      "before": 58,
+      "after": 86,
+      "target": 80,
+      "headline": true
+    },
+    {
+      "metric": "corner-pull-n",
+      "before": 72,
+      "after": 138,
+      "target": 110
+    },
+    {
+      "metric": "quality-return-rate",
+      "before": 3.9,
+      "after": 0.7
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "在库 14,000 件降级净损失",
+        120000
+      ],
+      [
+        "已售质量退货约 1,800 件（FOB）",
+        26100
+      ],
+      [
+        "退货物流与处理（实际支出）",
+        10800
+      ]
+    ],
+    "totalUsd": 156900,
+    "allocation": "成衣厂 50%（预拉伸比、包覆宽度）/ 松紧带供应商 50%（耐热老化不足）"
+  },
+  "disposition": [
+    {
+      "scope": "在库",
+      "quantity": 14000,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "拆包缝会损坏面料边，无法单独换松紧带；加缝永久护理标签改为 Line dry 并加 Do not tumble dry 警示"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

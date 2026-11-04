@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-012",
+  "legacyId": null,
+  "title": "产品召回流程建设与年度模拟演练",
+  "summary": "品牌有书面召回程序但从未演练，首次桌面推演暴露追溯定位耗时 72 小时、沟通链断裂。建立四级响应流程并嵌入年度实战演练，第二次演练追溯定位时间降至 8 小时。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "post-market",
+  "caseType": "system",
+  "failureModes": [
+    "traceability",
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "compliance",
+    "sourcing",
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [],
+  "regulations": [
+    "CPSA-15B",
+    "CPSA-17"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "trace-time-hours",
+      "before": 72,
+      "after": 8,
+      "target": 24,
+      "headline": true,
+      "note": "模拟场景：从启动到定位全部受影响箱号与批次"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-0XX",
+  "legacyId": null,
+  "title": "一句话描述产品与失效（不含品牌名与修饰词）",
+  "summary": "根因一句话 + 处置一句话 + 纠正一句话（≤ 120 字）",
+  "domain": "apparel",
+  "product": "产品名",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": ["seam-failure"],
+  "disciplines": ["sewing"],
+  "tools": ["8D"],
+  "standards": ["ASTM-D1683"],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": { "quantity": 0, "unit": "件", "fobUsd": 0 },
+  "metrics": [
+    { "metric": "quality-return-rate", "baseline": 0, "before": 0, "after": 0, "headline": true }
+  ],
+  "ledger": {
+    "basis": "FOB",
+    "items": [["库存报废", 0], ["退货处理", 0]],
+    "totalUsd": 0,
+    "allocation": "谁承担、依据是什么"
+  },
+  "disposition": [
+    { "scope": "美国 DC 在库", "quantity": 0, "unit": "件", "decision": "downgrade", "rationale": "为什么不能返修" }
+  ],
+  "headlineText": null,
+  "review": { "status": "draft", "technicalReviewer": null, "complianceReviewer": null, "reviewedAt": null, "notes": "" },
+  "version": "1.0.0",
+  "updatedAt": "YYYY-MM-DD"
+}

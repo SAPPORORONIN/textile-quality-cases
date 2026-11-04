@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-010",
+  "legacyId": "CASE_HT_10",
+  "title": "抱枕套内芯适配与压缩包装蓬松恢复",
+  "summary": "套体与内芯配套确认、统一压缩比并补充开箱恢复说明。",
+  "domain": "home-textile",
+  "product": "抱枕",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "unboxing",
+    "fit"
+  ],
+  "disciplines": [
+    "design-pdd",
+    "logistics-ecommerce"
+  ],
+  "tools": [
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "loft-return-rate",
+      "before": 4.4,
+      "after": 1.9,
+      "headline": true
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

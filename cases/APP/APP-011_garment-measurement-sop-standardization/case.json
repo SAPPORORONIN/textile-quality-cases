@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-011",
+  "legacyId": null,
+  "title": "成衣量度 SOP 标准化：跨工厂尺寸测量一致性提升",
+  "summary": "不同工厂使用不同的量度方法导致同一 SKU 的尺寸数据不可比较。统一 20 个关键量度点的 SOP（含照片、视频、量具规格），配合 MSA 验证，将工厂间尺寸测量的再现性从 kappa 0.62 提升至 0.88。",
+  "domain": "apparel",
+  "product": "全品类成衣",
+  "stage": "production",
+  "caseType": "system",
+  "failureModes": [
+    "fit",
+    "lab-measurement"
+  ],
+  "disciplines": [
+    "sewing",
+    "lab"
+  ],
+  "tools": [
+    "MSA",
+    "Kappa",
+    "PDCA"
+  ],
+  "standards": [
+    "ASTM-D5585"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 86.3,
+      "after": 93.1,
+      "target": 92,
+      "headline": true,
+      "note": "全品类加权平均，尺寸原因拒批占比从 38% 降至 14%"
+    },
+    {
+      "metric": "repeat-issue-rate",
+      "before": 28,
+      "after": 9,
+      "note": "尺寸相关 8D 的重复率"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

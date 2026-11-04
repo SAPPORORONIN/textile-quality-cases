@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-005",
+  "legacyId": "CASE_HT_05",
+  "title": "床垫护垫 TPU 膜洗后渗漏",
+  "summary": "膜材供应商私换聚酯型 TPU，热水洗烘后水解；叠加针孔链与包边热压不足。补做 16 CFR 1632 原型测试。",
+  "domain": "home-textile",
+  "product": "床垫护垫",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "waterproofing"
+  ],
+  "disciplines": [
+    "raw-material",
+    "sewing",
+    "compliance"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-127"
+  ],
+  "regulations": [
+    "CFR-16-1632",
+    "CPSC-CERT-EFILING"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 130000,
+    "unit": "件",
+    "fobUsd": 15
+  },
+  "metrics": [
+    {
+      "metric": "hydrostatic-mm",
+      "before": 620,
+      "after": 8500,
+      "target": 3000,
+      "note": "平面，10 次洗后",
+      "headline": true
+    },
+    {
+      "metric": "quality-return-rate",
+      "baseline": 1.2,
+      "before": 4.2,
+      "after": 1.1,
+      "note": "全部质量原因；渗漏相关 0.6% / 3.6% / 0.5%"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "在库与在制 30,000 件降级净损失",
+        310000
+      ],
+      [
+        "已售质量退货约 4,200 件（FOB）",
+        63000
+      ],
+      [
+        "退货物流与处理（实际支出）",
+        33600
+      ]
+    ],
+    "totalUsd": 406600,
+    "allocation": "擅自换料的膜材供应商承担"
+  },
+  "disposition": [
+    {
+      "scope": "在库与在制",
+      "quantity": 30000,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "先补做 16 CFR 1632 原型测试，合格后去标降级，不标“防水”"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

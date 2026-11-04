@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-003",
+  "legacyId": "CASE_HT_03",
+  "title": "无捻纱浴巾落絮与吸水衰减",
+  "summary": "原棉混入短绒，PVA 溶解后纤维失去束缚；过量氨基硅油形成疏水层。美仓 9 万条预洗试验仍超标，降级处理。",
+  "domain": "home-textile",
+  "product": "浴巾",
+  "stage": "post-market",
+  "caseType": "incident",
+  "failureModes": [
+    "lint-shedding",
+    "absorbency"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-79",
+    "AATCC-135"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 100000,
+    "unit": "条",
+    "fobUsd": 18
+  },
+  "metrics": [
+    {
+      "metric": "lint-loss",
+      "before": 2.85,
+      "after": 0.32,
+      "target": 0.8,
+      "headline": true
+    },
+    {
+      "metric": "absorbency-s",
+      "before": 15.8,
+      "after": 1.5,
+      "target": 3.0
+    },
+    {
+      "metric": "quality-return-rate",
+      "baseline": 1,
+      "before": 6.8,
+      "after": 0.7
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "美仓 90,000 条降级（FOB 扣除约 25% 回收）",
+        1215000
+      ],
+      [
+        "已售质量退货约 680 条（FOB）",
+        12240
+      ],
+      [
+        "退货处理（实际支出）",
+        6800
+      ],
+      [
+        "隔离仓储、去标与清仓物流（实际支出）",
+        52960
+      ],
+      [
+        "预洗补救试验与第三方测试（实际支出）",
+        13000
+      ]
+    ],
+    "totalUsd": 1300000,
+    "allocation": "纺纱厂 65%（违反 PO 纱线规格“100% 精梳长绒棉”）/ 染整厂 35%（硅油用量超出工艺单）"
+  },
+  "disposition": [
+    {
+      "scope": "美仓",
+      "quantity": 90000,
+      "unit": "条",
+      "decision": "downgrade",
+      "rationale": "预洗后掉毛仍 1.4%，去标清仓"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

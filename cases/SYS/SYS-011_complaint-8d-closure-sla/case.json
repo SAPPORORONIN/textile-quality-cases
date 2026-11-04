@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-011",
+  "legacyId": null,
+  "title": "客诉与内部质量问题 8D 闭环时效管理",
+  "summary": "8D 中位关闭周期从 67 天降至 23 天，重复问题率从 34% 降至 12%。按严重度分级 SLA、跨部门升级机制、月度 Pareto 驱动重复问题专项 PDCA。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "post-market",
+  "caseType": "ci",
+  "failureModes": [
+    "supplier-governance",
+    "cost-of-quality"
+  ],
+  "disciplines": [
+    "sourcing",
+    "logistics-ecommerce",
+    "finance"
+  ],
+  "tools": [
+    "8D",
+    "Pareto",
+    "PDCA"
+  ],
+  "standards": [],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "8d-closure-days",
+      "before": 67,
+      "after": 23,
+      "target": 30,
+      "headline": true,
+      "note": "全部 8D 中位数；Critical 级 SLA 14 天、Major 级 30 天"
+    },
+    {
+      "metric": "repeat-issue-rate",
+      "before": 34,
+      "after": 12,
+      "target": 15,
+      "note": "同一供应商 × 同一失效模式 12 个月内再次立案"
+    },
+    {
+      "metric": "claim-recovery-rate",
+      "before": 28,
+      "after": 61,
+      "note": "与 SYS-002 COPQ 体系联动后的索赔回收率"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

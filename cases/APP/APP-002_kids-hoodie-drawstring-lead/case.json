@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-002",
+  "legacyId": "CASE_APP_02",
+  "title": "儿童连帽卫衣风帽拉绳与拉链头涂层铅超标口岸扣留",
+  "summary": "4–12 码风帽拉绳属 16 CFR 1120.3 实质性产品危害，拉链头涂层铅 240 ppm。经批准在监管下逐件整改、重测并重签 CPC；根因是 CPC 测试样品与大货辅料不是同一批次。",
+  "domain": "apparel",
+  "product": "儿童连帽卫衣",
+  "stage": "shipment",
+  "caseType": "incident",
+  "failureModes": [
+    "regulatory-children"
+  ],
+  "disciplines": [
+    "compliance",
+    "trims",
+    "design-pdd"
+  ],
+  "tools": [
+    "8D",
+    "5-Why"
+  ],
+  "standards": [
+    "ASTM-F1816",
+    "CPSC-CH-E1003"
+  ],
+  "regulations": [
+    "CFR-16-1120",
+    "CPSIA-101-LEAD",
+    "CPSA-17",
+    "CPSC-CERT-EFILING"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 120000,
+    "unit": "件",
+    "fobUsd": 15
+  },
+  "metrics": [
+    {
+      "metric": "coating-lead-ppm",
+      "before": 240,
+      "after": 10,
+      "target": 90,
+      "afterQualifier": "<"
+    }
+  ],
+  "ledger": {
+    "basis": "实际支出",
+    "items": [
+      [
+        "监管仓整改、空运拉头、仓储滞港、测试、律师费",
+        250000
+      ],
+      [
+        "工厂返工与延误",
+        90000
+      ]
+    ],
+    "totalUsd": 340000,
+    "allocation": "喷涂外包相关部分由拉链厂承担"
+  },
+  "disposition": [
+    {
+      "scope": "长滩港在港",
+      "quantity": 40000,
+      "unit": "件",
+      "decision": "recondition-under-supervision",
+      "rationale": "获 CPSC 书面同意后逐件拆绳、封孔、换拉头并独立复核"
+    },
+    {
+      "scope": "工厂已装箱",
+      "quantity": 40000,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "开箱返工并重测"
+    },
+    {
+      "scope": "工厂在产",
+      "quantity": 40000,
+      "unit": "件",
+      "decision": "redesign",
+      "rationale": "ECN 改为松紧包边风帽"
+    }
+  ],
+  "headlineText": "口岸扣留 ➔ 监管整改放行",
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}

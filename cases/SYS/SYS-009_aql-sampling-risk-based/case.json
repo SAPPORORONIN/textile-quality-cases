@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "id": "SYS-009",
+  "legacyId": null,
+  "title": "风险分级动态抽检方案：从统一 AQL 到 Skip-Lot 与加严切换",
+  "summary": "全供应商统一 Normal/II/2.5 AQL 导致优质工厂过度检验、高风险工厂检出率不足。按供应商质量历史分四级，动态切换加严-正常-放宽-跳批，授权工厂覆盖的订单检验等待缩短、品牌检验资源向高风险端集中。",
+  "domain": "systemic",
+  "product": "全品类",
+  "stage": "shipment",
+  "caseType": "system",
+  "failureModes": [
+    "supplier-governance"
+  ],
+  "disciplines": [
+    "sourcing",
+    "lab"
+  ],
+  "tools": [
+    "Pareto",
+    "SPC"
+  ],
+  "standards": [
+    "ANSI-ASQ-Z1.4"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "ftr-audited",
+      "before": 89.2,
+      "after": 93.5,
+      "target": 93,
+      "headline": true,
+      "note": "全体供应商加权平均"
+    },
+    {
+      "metric": "release-wait-days",
+      "before": 3.2,
+      "after": 1.4,
+      "note": "全体供应商加权平均；跳批工厂 0.3 天、加严工厂 4.1 天"
+    },
+    {
+      "metric": "qa-cost-net",
+      "before": 1850000,
+      "after": 1520000,
+      "note": "品牌检验支出全口径；减少的部分主要来自跳批工厂检验频次降低"
+    }
+  ],
+  "ledger": null,
+  "disposition": [],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "新建案例，待指定评审人签核"
+  },
+  "version": "2.0.0",
+  "updatedAt": "2026-10-30"
+}

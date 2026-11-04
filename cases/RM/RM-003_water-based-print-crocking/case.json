@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-003",
+  "legacyId": "CASE_RM_02",
+  "title": "水性胶浆印花湿摩擦、龟裂与洗后脱落",
+  "summary": "固含偏低、烘焙实温不足、叠印残水与过量柔软助剂。可后固化的放行，配方问题批次降级。",
+  "domain": "raw-material",
+  "product": "印花卫衣",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "print-durability",
+    "colorfastness"
+  ],
+  "disciplines": [
+    "dyeing-finishing"
+  ],
+  "tools": [
+    "8D"
+  ],
+  "standards": [
+    "AATCC-8",
+    "AATCC-150"
+  ],
+  "regulations": [
+    "CA-PROP65"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 49000,
+    "unit": "件",
+    "fobUsd": 20
+  },
+  "metrics": [
+    {
+      "metric": "wet-crock-grade",
+      "before": 1.5,
+      "after": 4.0,
+      "target": 3.0,
+      "headline": true
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "3,400 件降级（FOB 扣除约 40% 残值）",
+        40800
+      ],
+      [
+        "5,600 件后固化（实际支出）",
+        7000
+      ],
+      [
+        "化学筛查与复测（实际支出）",
+        4500
+      ]
+    ],
+    "totalUsd": 52300,
+    "allocation": "印花厂承担（分包合同质量条款：按成衣 FOB 扣除残值后的损失赔付，并承担返工与测试费）"
+  },
+  "disposition": [
+    {
+      "scope": "已印花",
+      "quantity": 5600,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "浆料批 A、B（固化不足）；图案表面实测 150℃、2.5 min 后固化，每印花批抽 5 件湿摩 3.5 级、洗后无脱落，甲醛与气味复测合格"
+    },
+    {
+      "scope": "已印花",
+      "quantity": 3400,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "浆料批 C 固含 32%、增塑助剂 9%，充分固化后仍只有 2.0 级，无法补救；只在品牌自有奥特莱斯销售，保留法定标签，护理标签改为冷水手洗、晾干"
+    },
+    {
+      "scope": "剩余未印花",
+      "quantity": 40000,
+      "unit": "件",
+      "decision": "redesign",
+      "rationale": "按新工艺窗口（固含、图案表面实测温度、闪干残水）首件放行后生产"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "v1 迁移；已经过两轮专家审计修订，待指定评审人签核；2026-10-27 按 audits/AUDIT-20261027-all.md 修订（处理结果见 audits/AUDIT-20261027-all-response.md），须按 GOV-01 重新评审"
+  },
+  "version": "2.1.0",
+  "updatedAt": "2026-10-27"
+}
