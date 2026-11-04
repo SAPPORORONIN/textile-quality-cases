@@ -66,12 +66,13 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
 .warnlist li { margin-bottom: 4px; font-size: 13px; }
 /* ── Mobile optimizations ── */
 @media (max-width: 640px) {
-  /* Topbar: scrollable tabs instead of wrapping */
-  .topbar { padding: 8px 12px; gap: 8px 12px; }
-  .topbar-right { width: 100%; justify-content: space-between; }
-  .tabs { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 2px; }
+  /* Topbar: scrollable tabs with lang button inline */
+  .topbar { padding: 8px 12px; gap: 6px 12px; }
+  .topbar-right { width: 100%; flex-wrap: nowrap; align-items: center; }
+  .tabs { flex: 1; min-width: 0; flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 2px; }
   .tabs::-webkit-scrollbar { display: none; }
   .tabs button { padding: 6px 10px; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+  .lang-btn { flex-shrink: 0; padding: 4px 8px; font-size: 12px; }
 
   /* Filters: search full-width, dropdowns 2-col grid */
   .filters { gap: 6px; display: flex; flex-wrap: wrap; }
