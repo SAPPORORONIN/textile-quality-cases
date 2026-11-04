@@ -126,6 +126,7 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
   .table-wrap.scrollable::after { opacity: 1; }
   table { font-size: 13px; }
   th, td { padding: 6px; }
+  th { white-space: nowrap; }
 
   /* Stats grid */
   .stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
