@@ -64,8 +64,55 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
 .facts h2 { margin: 14px 0 4px; font-size: 16px; }
 .factline { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; }
 .warnlist li { margin-bottom: 4px; font-size: 13px; }
+/* ── Mobile optimizations ── */
 @media (max-width: 640px) {
+  /* Topbar: scrollable tabs instead of wrapping */
+  .topbar { padding: 8px 12px; gap: 8px 12px; }
+  .topbar-right { width: 100%; justify-content: space-between; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 2px; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tabs button { padding: 6px 10px; font-size: 14px; white-space: nowrap; flex-shrink: 0; }
+
+  /* Filters: search full-width, dropdowns 2-col grid */
+  .filters { gap: 6px; display: flex; flex-wrap: wrap; }
+  input[type=search] { flex: 1 1 100%; font-size: 16px; }
+  .filters select { flex: 1 1 calc(50% - 4px); max-width: calc(50% - 4px); min-width: 0; font-size: 14px; padding: 8px 6px; }
+  .filters .muted { flex: 0 0 auto; margin-left: auto; }
+
+  /* Cards: allow narrower cards */
+  .grid { grid-template-columns: 1fr; gap: 10px; }
+  .card { padding: 12px; }
+  .card h3 { font-size: 15px; }
+
+  /* Reader: full-screen modal */
   .reader { padding: 0; }
-  .reader-panel { border-radius: 0; }
-  main { padding: 12px 16px; }
+  .reader-panel { border-radius: 0; width: 100%; }
+  .reader-head { padding: 12px 14px; }
+  .reader-head h1 { font-size: 17px; }
+  .reader-body { padding: 4px 14px 20px; }
+  .reader-body h2 { font-size: 16px; margin-top: 20px; }
+  .reader-body h3 { font-size: 15px; }
+
+  /* Tables: scroll hint gradient */
+  .table-wrap { position: relative; }
+  .table-wrap::after { content: ''; position: absolute; right: 0; top: 0; bottom: 0; width: 20px; background: linear-gradient(to right, transparent, var(--surface)); pointer-events: none; opacity: 0; transition: opacity .2s; }
+  .table-wrap.scrollable::after { opacity: 1; }
+  table { font-size: 13px; }
+  th, td { padding: 6px; }
+
+  /* Stats grid */
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stat b { font-size: 20px; }
+
+  /* Doc list */
+  .doclist { grid-template-columns: 1fr; }
+
+  /* General spacing */
+  main { padding: 10px 12px; }
+  .notice { margin: 8px 12px 0; font-size: 12px; }
+  body { font-size: 14px; }
+
+  /* Facts in reader */
+  .factline { font-size: 13px; gap: 4px 10px; }
+  .badges .badge { font-size: 11px; padding: 1px 6px; }
 }

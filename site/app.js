@@ -239,4 +239,11 @@
   document.querySelectorAll('.doclist').forEach((el) => el.addEventListener('click', (e) => { const b = e.target.closest('[data-doc]'); if (b) location.hash = `doc=${b.dataset.doc}`; }));
 
   renderCases(); renderRegistry(); route();
+
+  // Mark scrollable table wrappers for mobile scroll-hint gradient
+  const markScrollable = () => document.querySelectorAll('.table-wrap').forEach(el => {
+    el.classList.toggle('scrollable', el.scrollWidth > el.clientWidth + 2);
+    el.addEventListener('scroll', () => el.classList.toggle('scrollable', el.scrollLeft < el.scrollWidth - el.clientWidth - 2), { passive: true });
+  });
+  new MutationObserver(markScrollable).observe(document.body, { childList: true, subtree: true });
 })();
