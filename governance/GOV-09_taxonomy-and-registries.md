@@ -4,9 +4,9 @@ title: "分类体系与注册表维护"
 docType: "governance"
 owner: null
 status: "approved"
-version: "2.0.0"
+version: "2.1.0"
 reviewedAt: "2026-10-26"
-updatedAt: "2026-10-26"
+updatedAt: "2026-11-04"
 ---
 # 分类体系与注册表维护
 
@@ -37,3 +37,8 @@ updatedAt: "2026-10-26"
 ## 4. 注册表条目新增与核实
 - 新增标准/法规时至少填写：编号、标题、类型/状态、来源链接；`verifiedAt` 只有在对照来源核实后才填写；
 - 每季度复盘时导出“未核实 / 即将过期”清单（站点“治理健康度”页面直接显示），由维护人逐条处理。
+
+## 5. 品牌名单的匹配方式
+- `brandWatchlist.names` 只扫描案例（`scope: cases`），区分大小写，按整词匹配：名称前后紧接英文字母时不算命中，紧接汉字、数字或标点仍算命中。例如“Target门店”会报错，“Targeting”不会。
+- 部分零售商名称同时是普通英文单词（如 Target、Gap）。本版正文用中文书写，这类单词很少以英文出现，所以只用 `names` 整词匹配；需要表达其普通含义时（如“目标值”“差距”）用中文。
+- 英文版正文为英文，另设 `brandWatchlist.patterns`，只在零售语境下匹配（如“Target stores”“Gap Inc.”），避免把指标表中的“Target”等普通用法误报。本版目前没有 `patterns` 字段。

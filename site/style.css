@@ -82,7 +82,7 @@ th { color: var(--muted); font-weight: 600; background: var(--surface-2); }
 .bi-col { min-width: 0; }
 .bi-alt { border-left: 1px solid var(--border); padding-left: 20px; margin-left: -8px; }
 .bi-gap .bi-col:empty::after { content: '—'; color: var(--muted); display: block; padding: 1em 0; }
-.bi-legend { position: sticky; top: 0; z-index: 1; background: var(--surface); border-bottom: 1px solid var(--border); border-radius: 0; font-size: 12px; font-weight: 600; color: var(--muted); padding-top: 8px; padding-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
+.bi-legend { position: sticky; top: -4px; z-index: 1; background: var(--surface); border-bottom: 1px solid var(--border); border-radius: 0; font-size: 12px; font-weight: 600; color: var(--muted); padding-top: 8px; padding-bottom: 6px; text-transform: uppercase; letter-spacing: .04em; }
 .bi-legend > div + div { padding-left: 12px; }
 .bi-head h2, .bi-head h3, .bi-head h4 { margin-bottom: 4px; }
 /* ── Mobile optimizations ── */
