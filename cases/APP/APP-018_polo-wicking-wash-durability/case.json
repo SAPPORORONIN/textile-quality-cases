@@ -7,7 +7,7 @@
   "domain": "apparel",
   "product": "男式涤纶速干 Polo 衫",
   "stage": "production",
-  "caseType": "ci",
+  "caseType": "incident",
   "failureModes": [
     "absorbency"
   ],
@@ -39,8 +39,41 @@
       "note": "AATCC 79，按 AATCC 135 家庭洗涤 10 次后；改进前为新工艺 20 个不合格批均值，改进后为其后 24 批均值"
     }
   ],
-  "ledger": null,
-  "disposition": null,
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "12 批面料返工（水洗去除柔软剂 + 染色机补做亲水剂同浴吸尽）",
+        3600
+      ],
+      [
+        "20 批 AATCC 79 洗 10 次后复测（第三方实验室）",
+        2000
+      ],
+      [
+        "8 批成衣撤下「吸湿速干」吊牌（人工）",
+        480
+      ]
+    ],
+    "totalUsd": 6080,
+    "allocation": "染厂未经通知变更整理工艺，按染整加工协议承担 12 批面料返工费用；复测与吊牌修改费用由品牌承担（复测属品牌质量确认流程，让步放行经客户书面同意）"
+  },
+  "disposition": [
+    {
+      "scope": "尚未开裁的 12 批面料",
+      "quantity": 12,
+      "unit": "批",
+      "decision": "rework",
+      "rationale": "水洗去除柔软剂后在染色机中补做亲水剂同浴吸尽，复测合格后使用"
+    },
+    {
+      "scope": "已开裁的 8 批成衣",
+      "quantity": 8,
+      "unit": "批",
+      "decision": "downgrade",
+      "rationale": "经客户书面同意让步放行，成衣撤下「吸湿速干」吊牌，页面不作该项宣称"
+    }
+  ],
   "headlineText": null,
   "review": {
     "status": "draft",

@@ -23,7 +23,7 @@
   "standards": [
     "ASTM-B117"
   ],
-  "regulations": [],
+  "regulations": ["FTC-ACT-5"],
   "historicalRegulations": [],
   "market": "US",
   "provenance": "illustrative",
