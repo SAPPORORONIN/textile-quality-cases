@@ -9,11 +9,15 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const tx = JSON.parse(fs.readFileSync(path.join(root, 'registry/taxonomy.json'), 'utf8'));
 const cases = loadCases().filter((c) => c.facts).map((c) => c.facts).filter((f) => f.review?.status !== 'retired');
 
+let droppedIds = [];
+try { droppedIds = JSON.parse(fs.readFileSync(path.join(root, 'loop/state.json'), 'utf8')).history.flatMap((h) => h.dropped || []); } catch { /* 没有循环状态文件时忽略 */ }
 const prefixOf = { apparel: 'APP', 'home-textile': 'HT', 'raw-material': 'RM', systemic: 'SYS' };
 const out = {};
 for (const d of Object.keys(tx.domains)) {
   const list = cases.filter((c) => c.domain === d).sort((a, b) => a.id.localeCompare(b.id));
-  const maxNo = Math.max(0, ...list.map((c) => parseInt(c.id.split('-')[1], 10)));
+  // 循环删掉的编号留空不回收（loop/state.json 的 history[].dropped），下一个编号要越过它们
+  const dropped = droppedIds.filter((id) => id.startsWith(prefixOf[d] + '-'));
+  const maxNo = Math.max(0, ...[...list.map((c) => c.id), ...dropped].map((id) => parseInt(id.split('-')[1], 10)));
   const count = (key) => list.flatMap((c) => [].concat(c[key] || [])).reduce((m, k) => ((m[k] = (m[k] || 0) + 1), m), {});
   out[d] = {
     total: list.length,
