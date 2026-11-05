@@ -1,7 +1,10 @@
 {
   "roundsCompleted": 1,
   "rotationIndex": 1,
-  "lock": null,
+  "lock": {
+    "startedAt": "2026-11-05T04:36:22.954Z",
+    "round": 2
+  },
   "history": [
     {
       "round": 1,
