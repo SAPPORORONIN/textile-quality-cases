@@ -9,5 +9,5 @@
   "maxAuditPasses": 2,
   "repo": "https://github.com/SAPPORORONIN/textile-quality-cases",
   "branch": "main",
-  "triggerId": "trig_01YGC2xFjNZN2dsdQh5mKD6y"
+  "triggerId": null
 }
