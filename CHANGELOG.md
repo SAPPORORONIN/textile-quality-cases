@@ -10,6 +10,9 @@
   - GOV-02 新增 §3.8 语言：本版书写语言，以及两版章节、段落一一对应的要求（对照模式据此对齐）。
   - GOV-07 新增 §6 语言版本：两版同步规则、审计报告不翻译，以及站点读取的英文内容文件。
   - GOV-09 新增 §5 品牌名单的匹配方式：按本版校验器的实际行为说明（区分大小写、整词匹配、无 `patterns` 字段）。
+- **新增 10 个 CI 案例的英文译文**（HT-013 至 HT-017、APP-013 至 APP-017）：`site/cases-en.js` 补齐标题、摘要、headline、产品、叙述、指标备注与评审备注；叙述的章节与段落与中文逐块对应，对照模式下无整节退回或单侧章节。
+- **注册表英文补齐**：`site/registry-en.js` 新增 3 条标准（AATCC-TM202、AATCC-224、IWTO-47）与 19 条指标的英文名称与定义。
+- **站点标签补齐**：`site/i18n.js` 为 6 个新失效模式（hand-feel、loft-loss、noise、opacity、prickle、weight-deficiency）补中英文名称，此前中文界面也显示原始键名；指标方向新增 `higher-abs-worse`（绝对值越大越差）与 `spec`（符合规格）的显示名称，此前注册表“方向”列显示为 undefined。
 
 ## 2.0.2 — 2026-10-27
 按全库独立审计 `audits/AUDIT-20261027-all.md`（Critical 0 / Major 25 / Minor 66 / Observation 15）修订，逐条处理结果见 `audits/AUDIT-20261027-all-response.md`：106 条全部核实后修正，无不同意、无待补信息。
