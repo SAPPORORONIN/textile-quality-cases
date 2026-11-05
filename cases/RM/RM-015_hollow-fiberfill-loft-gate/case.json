@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-015",
+  "legacyId": null,
+  "title": "新供应商中空涤纶填充纤维蓬松保持率不足产前拦截",
+  "summary": "新纤维厂松弛热定型温度只有 130 ℃，三维卷曲没有充分形成和定型，硅油也未充分交联，循环压缩加洗涤后蓬松保持率 72%。按定型温度做梯度试验，提高到 170 ℃ 后试产 3 批 89–92%，附条件通过门禁。",
+  "domain": "raw-material",
+  "product": "7D 中空三维卷曲涤纶短纤（填充物）",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "loft-loss"
+  ],
+  "disciplines": [
+    "raw-material",
+    "sourcing",
+    "lab"
+  ],
+  "tools": [
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D1776",
+    "ASTM-D3937"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "loft-retention-pct",
+      "before": 72,
+      "after": 91,
+      "target": 85,
+      "headline": true,
+      "note": "客户填充物方法：50 × 50 cm 测试小被芯充 250 g，70% 压缩循环 5,000 次后按护理标签洗烘 3 次，调湿后测中心高度与初始高度之比；before 为送样批，after 为 170 ℃ 试产 3 批均值"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

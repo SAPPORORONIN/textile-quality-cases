@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-022",
+  "legacyId": null,
+  "title": "棉涤抓绒连帽卫衣面料洗涤掉毛超标",
+  "summary": "起毛机针布磨损后面料厂把起毛道数由 3 道加到 4 道，转笼除绒机检修 5 周期间又跳过除绒，面料批洗涤掉毛率均值 0.9%。更换针布、起毛 3 道、除绒列为必经工序后，后续 20 批均值 0.35%。",
+  "domain": "apparel",
+  "product": "男式棉涤抓绒连帽卫衣",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "lint-shedding"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "raw-material",
+    "lab"
+  ],
+  "tools": [
+    "PDCA",
+    "5-Why"
+  ],
+  "standards": [
+    "AATCC-135",
+    "ASTM-D1776",
+    "ASTM-D3512"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "lint-loss",
+      "before": 0.9,
+      "after": 0.35,
+      "target": 0.5,
+      "headline": true,
+      "note": "客户称重法：每个面料批 3 块 50 × 50 cm 包边试样，按 ASTM D1776 调湿称重，按 AATCC 135 条件洗烘 3 次后再调湿称重；批均值，before 为 18 批，after 为改进后 20 批"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-022",
+  "legacyId": null,
+  "title": "纤维枕芯改卷压包装后接缝沿针孔线破裂",
+  "summary": "枕芯改为压缩卷包后，高密棉布壳用 Nm 110 机针、14 SPI 缝制，针孔线把面料打弱，卷压时接缝沿针孔线撕开。按机针与线迹密度做梯度对比，改用 Nm 90 轻圆头针、11 SPI 并放慢压缩，接缝断裂强力由 168 N 升到 245 N。",
+  "domain": "home-textile",
+  "product": "涤纶纤维枕芯（纯棉高密布壳）",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "seam-failure"
+  ],
+  "disciplines": [
+    "sewing",
+    "logistics-ecommerce",
+    "lab"
+  ],
+  "tools": [
+    "PDCA",
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D1683"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "seam-break-force-N",
+      "before": 168,
+      "after": 245,
+      "target": 200,
+      "headline": true,
+      "note": "客户接缝方法（参考 ASTM D1683 抓样法），布壳四周 301 平缝，Tex 40 涤纶包芯线，取自长边中部，接缝垂直于加载方向，5 个试样均值"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

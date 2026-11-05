@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-016",
+  "legacyId": null,
+  "title": "精梳棉单面汗布成品克重偏低的过程改进",
+  "summary": "为满足可裁幅宽，定形门幅拉到 72 in，部分织机线圈长度偏长，汗布 40 批克重均值 143 g/m²（规格 150 ± 5%）。逐台校线长、定形门幅改为 68 in、排料改为 66 in 可裁幅宽后，50 批均值 151 g/m²，洗后幅宽缩率同时改善。",
+  "domain": "raw-material",
+  "product": "精梳棉单面汗布（150 g/m²）",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "weight-deficiency"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing",
+    "lab"
+  ],
+  "tools": [
+    "PDCA"
+  ],
+  "standards": [
+    "ASTM-D3776",
+    "ASTM-D1776",
+    "AATCC-135"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "fabric-gsm",
+      "before": 143,
+      "after": 151,
+      "target": 150,
+      "headline": true,
+      "note": "ASTM D3776，按 ASTM D1776 调湿 24 h 后测，每批 5 个试样；批均值的平均，before 为 40 批，after 为改进后 50 批；规格 142.5–157.5 g/m²"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

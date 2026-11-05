@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-020",
+  "legacyId": null,
+  "title": "涤纶运动 T 恤塑溶胶印花海运后粘袋",
+  "summary": "印花车间把减黏剂加到 20%（油墨厂上限 10%），又在烘干后约 2 分钟就折叠装袋，印花在海运中与包装袋粘连。DC 全检分拣，有痕件降级出售，其余加隔离纸重新包装；恢复 8% 配方与冷却工序后抗粘连 4 级。",
+  "domain": "apparel",
+  "product": "男式涤纶针织运动 T 恤（塑溶胶印花）",
+  "stage": "shipment",
+  "caseType": "incident",
+  "failureModes": [
+    "blocking"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "logistics-ecommerce",
+    "lab"
+  ],
+  "tools": [
+    "8D",
+    "5-Why"
+  ],
+  "standards": [],
+  "regulations": [
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 60000,
+    "unit": "件",
+    "fobUsd": 6.8
+  },
+  "metrics": [
+    {
+      "metric": "blocking-grade",
+      "before": 2,
+      "after": 4,
+      "target": 4,
+      "headline": true,
+      "note": "客户包装老化抗粘连方法：印花面对 PE 包装袋膜，约 3.5 kPa，50 ℃ 24 h，冷却 30 min 后剥离评级；before 为首批留样，after 为纠正后大货"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "首批有痕件 4,650 件降级出售（FOB 减折价回收）",
+        24645
+      ],
+      [
+        "第二批有痕件 3,420 件降级出售（FOB 减折价回收）",
+        18126
+      ],
+      [
+        "DC 48,000 件拆袋分拣、加隔离纸重新包装（实际支出）",
+        20640
+      ],
+      [
+        "工厂在库 7,000 件拆袋加隔离纸重新包装（实际支出）",
+        1050
+      ],
+      [
+        "测试与追溯（实际支出）",
+        2200
+      ]
+    ],
+    "totalUsd": 66661,
+    "allocation": "成衣厂未经通知改变已确认的印花配方与包装工序，承担 80%；买手在 TOP 样评审时要求“更软”但没有要求复测，客户 QA 认可品牌承担 20%"
+  },
+  "disposition": [
+    {
+      "scope": "首批 DC 在库（全检后无痕）",
+      "quantity": 25350,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "粘袋可剥离、印花表面无痕；换新袋并在印花面加有机硅隔离纸，按客户方法加隔离纸评级 4.5 级后放行"
+    },
+    {
+      "scope": "首批 DC 在库（剥离后留痕或印花边缘起翘）",
+      "quantity": 4650,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "印花表面亮痕与膜残留无法修复，塑溶胶印花不能剥除重印；去除品牌标识后折价售给折扣渠道，保留纤维成分、产地与洗涤标签（含 RN 号）"
+    },
+    {
+      "scope": "第二批（在途，到 DC 后全检，无痕）",
+      "quantity": 14580,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "同首批无痕件：换袋加隔离纸后放行"
+    },
+    {
+      "scope": "第二批（剥离后留痕）",
+      "quantity": 3420,
+      "unit": "件",
+      "decision": "downgrade",
+      "rationale": "同首批有痕件"
+    },
+    {
+      "scope": "工厂已印花装箱未出运",
+      "quantity": 7000,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "未经历海运高温，剥离后无痕；配方仍是 20% 减黏剂，冷却后按客户方法只有 3 级，客户书面同意在加隔离纸（4.5 级）的条件下让步放行"
+    },
+    {
+      "scope": "已裁未印花",
+      "quantity": 5000,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "按 8% 减黏剂配方与冷却工序印花，抗粘连 4 级，正常放行"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

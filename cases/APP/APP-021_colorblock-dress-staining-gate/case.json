@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-021",
+  "legacyId": null,
+  "title": "撞色拼接纯棉连衣裙藏青色沾污白色拼块产前拦截",
+  "summary": "染厂把深藏青活性染料染色后的皂洗由两道 95 ℃ 减为一道 80 ℃，未固着的水解染料残留，AATCC 61 2A 棉沾色 2.5 级。产前按皂洗条件做梯度对比，恢复两道 95 ℃ 皂洗、不用固色剂，沾色 4.0 级、成衣洗后白色拼块 4 级，通过门禁。",
+  "domain": "apparel",
+  "product": "女式撞色拼接纯棉针织连衣裙",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "colorfastness"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "lab",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-61",
+    "AATCC-EP2",
+    "AATCC-150",
+    "AATCC-16.3",
+    "AATCC-173",
+    "AATCC-135"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "staining-grade",
+      "before": 2.5,
+      "after": 4.0,
+      "target": 3.5,
+      "headline": true,
+      "note": "AATCC 61 2A，多纤维贴衬中棉的沾色，AATCC EP2 灰卡评级；before 为第一个藏青大货染色批放行前测试，after 为同一批补做两道 95 ℃ 皂洗并重新整理后的复测"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

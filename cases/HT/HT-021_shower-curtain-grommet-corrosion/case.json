@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-021",
+  "legacyId": null,
+  "title": "浴帘扣眼材质被替换为镀镍钢导致盐雾不合格",
+  "summary": "五金厂缺黄铜带材，把两批扣眼换成镀镍冷轧钢且 COA 仍写黄铜，出货前盐雾 4 h 出红锈。按扣眼批追溯 6,000 件浴帘拆换黄铜扣眼，剩余钢扣眼退回；进货增加磁铁与 XRF 材质核对。",
+  "domain": "home-textile",
+  "product": "涤纶浴帘（金属扣眼）",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "corrosion"
+  ],
+  "disciplines": [
+    "trims",
+    "lab",
+    "sourcing"
+  ],
+  "tools": [
+    "8D",
+    "5-Why"
+  ],
+  "standards": [
+    "ASTM-B117"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 36000,
+    "unit": "件",
+    "fobUsd": 4.2
+  },
+  "metrics": [
+    {
+      "metric": "salt-spray-hours",
+      "before": 4,
+      "after": 72,
+      "target": 24,
+      "headline": true,
+      "note": "ASTM B117（5% NaCl，35 ℃），已装在浴帘上的扣眼，客户定义失效为基材腐蚀（红锈或铜绿）；before 为钢扣眼批，after 为替换后的黄铜扣眼"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "6,000 件拆除钢扣眼、重装黄铜扣眼（工时）",
+        5400
+      ],
+      [
+        "拆装中割伤帘头报废 180 件（FOB）",
+        756
+      ],
+      [
+        "替换用黄铜扣眼 72,000 套",
+        1440
+      ],
+      [
+        "测试与追溯（实际支出）",
+        1600
+      ],
+      [
+        "重新包装与加班（实际支出）",
+        1300
+      ]
+    ],
+    "totalUsd": 10496,
+    "allocation": "五金厂擅自替换材质且 COA 不实，按辅料供应协议承担拆装工时、报废、替换扣眼与重新包装加班；测试与追溯费用由浴帘厂承担，因其进货检验只核对外观与尺寸"
+  },
+  "disposition": [
+    {
+      "scope": "未用的钢扣眼（C 批余量与 D 批）",
+      "quantity": 144000,
+      "unit": "套",
+      "decision": "return-to-vendor",
+      "rationale": "磁铁与 XRF 确认为镀镍钢，与订单材质不符，退回五金厂换为黄铜扣眼"
+    },
+    {
+      "scope": "已装钢扣眼的浴帘（已包装）",
+      "quantity": 5820,
+      "unit": "件",
+      "decision": "rework",
+      "rationale": "用扣眼拆除刀切开钢扣眼的翻边取出，在原孔重装同规格黄铜扣眼；每批抽测扣眼拔脱力与盐雾，合格后重新包装放行"
+    },
+    {
+      "scope": "拆装中帘头被割伤",
+      "quantity": 180,
+      "unit": "件",
+      "decision": "scrap",
+      "rationale": "帘头孔边布料与衬被割破，重装后扣眼不牢，无法修复"
+    },
+    {
+      "scope": "已装黄铜扣眼的浴帘（A、B 批，含已出运）",
+      "quantity": 18000,
+      "unit": "件",
+      "decision": "release",
+      "rationale": "磁铁与 XRF 确认为黄铜，盐雾 72 h 才出现基材腐蚀，不受影响"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

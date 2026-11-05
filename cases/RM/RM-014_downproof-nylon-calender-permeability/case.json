@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-014",
+  "legacyId": null,
+  "title": "锦纶防绒面料轧光温度失控导致透气量超标",
+  "summary": "轧光机导热油温控热电偶损坏，辊面实际 152 ℃（显示 185 ℃），3、4 号批防绒面料透气量 1.9 cc/s/cm²。已裁片报废，未裁的 22,440 码返厂重轧后 0.6；面料厂逐批测透气量，轧光辊面温度每班实测。",
+  "domain": "raw-material",
+  "product": "20D 锦纶高密防绒塔夫绸",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "down-leakage"
+  ],
+  "disciplines": [
+    "raw-material",
+    "dyeing-finishing",
+    "lab"
+  ],
+  "tools": [
+    "8D",
+    "5-Why"
+  ],
+  "standards": [
+    "ASTM-D737",
+    "IDFB-TEST-RULES",
+    "ASTM-D1424",
+    "AATCC-22"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 75000,
+    "unit": "码",
+    "fobUsd": 3.2
+  },
+  "metrics": [
+    {
+      "metric": "downproof-air-permeability",
+      "before": 1.9,
+      "after": 0.6,
+      "target": 1.0,
+      "headline": true,
+      "note": "ASTM D737，125 Pa，测试面积 38 cm²，每卷 5 点；before 为 3、4 号批批均值，after 为重轧后批均值"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "3 号批已裁片 7,560 码报废（面料价）",
+        24192
+      ],
+      [
+        "4,200 件裁剪工时损失",
+        1470
+      ],
+      [
+        "22,440 码返厂重轧与逐卷复测（实际支出）",
+        4039
+      ],
+      [
+        "测试与追溯（实际支出）",
+        2600
+      ],
+      [
+        "往返运输（实际支出）",
+        1900
+      ]
+    ],
+    "totalUsd": 34201,
+    "allocation": "面料厂设备失控且 COA 未逐批测试，承担裁片报废、重轧、运输与补织面料；成衣厂违反“实验室放行前不得开裁”的客户规定，承担裁剪工时；测试与追溯费用双方各半"
+  },
+  "disposition": [
+    {
+      "scope": "3 号批已裁衣片（4,200 件用量）",
+      "quantity": 7560,
+      "unit": "码",
+      "decision": "scrap",
+      "rationale": "轧光须在整幅连续布面上进行，裁片无法重轧；加防绒内胆会改变产品结构，客户不接受"
+    },
+    {
+      "scope": "3 号批未裁与 4 号批整批",
+      "quantity": 22440,
+      "unit": "码",
+      "decision": "reprocess",
+      "rationale": "面料无涂层，可在辊面温度核实为 185 ℃ 后重新轧光；逐卷复测透气量与撕破强力，合格后放行"
+    },
+    {
+      "scope": "1、2 号批及热电偶更换后生产的 5 号批",
+      "quantity": 45000,
+      "unit": "码",
+      "decision": "release",
+      "rationale": "逐卷复测透气量 0.5–0.8 cc/s/cm²，合格"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 2 轮生成，已经独立审计（audits/AUDIT-20261105-loop02.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}
