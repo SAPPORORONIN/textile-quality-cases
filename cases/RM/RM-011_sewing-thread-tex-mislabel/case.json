@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-011",
+  "legacyId": null,
+  "title": "包芯缝纫线错贴线号导致工装裤接缝强力不足",
+  "summary": "线厂同色两张订单同班络筒，Tex 27 的线筒贴了 Tex 40 标签，工装裤后裆缝断裂力只有 42 lbf。按线批追溯拆缝重缝 9,600 条，错线退回；进线按批测线密度与单纱强力，线厂贴标前核对线号。",
+  "domain": "raw-material",
+  "product": "涤纶包芯缝纫线（Tex 40）",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "seam-failure"
+  ],
+  "disciplines": [
+    "trims",
+    "sewing",
+    "lab"
+  ],
+  "tools": [
+    "8D",
+    "5-Why"
+  ],
+  "standards": [
+    "ASTM-D1683",
+    "ASTM-D204"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 40000,
+    "unit": "条",
+    "fobUsd": 13.5
+  },
+  "metrics": [
+    {
+      "metric": "seam-break-force-lbf",
+      "before": 42,
+      "after": 64,
+      "target": 50,
+      "headline": true,
+      "note": "后裆缝，客户成品接缝方法（参考 ASTM D1683），每批 5 个试样均值"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "在制 7,200 条拆缝重缝（工时与缝线）",
+        7920
+      ],
+      [
+        "已包装 2,400 条拆包、拆缝重缝与重新包装",
+        6240
+      ],
+      [
+        "拆缝中损伤报废 144 条（FOB）",
+        1944
+      ],
+      [
+        "测试与追溯（实际支出）",
+        2800
+      ],
+      [
+        "3,000 条改空运保交期（实际支出）",
+        9600
+      ]
+    ],
+    "totalUsd": 28504,
+    "allocation": "线厂错贴标签，按辅料供应协议承担错线退换与拆缝重缝工时、报废；空运费由线厂与成衣厂各半，成衣厂进线检验只核对颜色与数量"
+  },
+  "disposition": [
+    {
+      "scope": "未用及半筒的错标线筒",
+      "quantity": 1680,
+      "unit": "筒",
+      "decision": "return-to-vendor",
+      "rationale": "实测为 Tex 27，与标签不符，退回线厂换货"
+    },
+    {
+      "scope": "在制（后裆、内长缝已缝，未完成）",
+      "quantity": 7080,
+      "unit": "条",
+      "decision": "rework",
+      "rationale": "拆除错线缝制的 301 与 516 接缝，用 Tex 40 线沿原针孔重缝；每批抽 5 条测后裆缝断裂力 ≥ 50 lbf 后放行；拆缝中另有 120 条割破面料转报废"
+    },
+    {
+      "scope": "已包装待出运",
+      "quantity": 2376,
+      "unit": "条",
+      "decision": "rework",
+      "rationale": "拆包后拆除套结与相关接缝重缝，重缝成本低于货值；抽测合格后重新包装；拆缝中另有 24 条割破面料转报废"
+    },
+    {
+      "scope": "拆缝时剪伤面料",
+      "quantity": 144,
+      "unit": "条",
+      "decision": "scrap",
+      "rationale": "面料被拆线刀割破，无法修复"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

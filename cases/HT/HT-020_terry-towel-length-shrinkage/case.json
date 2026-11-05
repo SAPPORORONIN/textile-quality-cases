@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-020",
+  "legacyId": null,
+  "title": "纯棉毛圈浴巾洗后长度缩率偏大",
+  "summary": "染后在拉幅定形机上零超喂烘干，经向被拉伸，洗后长度缩率批均值 8.6%。改为松式网带烘干并相应加长织造长度，40 批均值降到 4.9%，38 批合格。",
+  "domain": "home-textile",
+  "product": "纯棉毛圈浴巾",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "dimensional-change"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "lab"
+  ],
+  "tools": [
+    "DOE",
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-135",
+    "ASTM-D3776",
+    "AATCC-79"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "dimensional-change-pct",
+      "before": -8.6,
+      "after": -4.9,
+      "target": -6.0,
+      "headline": true,
+      "note": "AATCC 135 方法洗涤 3 次后，长度（经向）；生产批均值，改进前 24 批、改进后 40 批"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

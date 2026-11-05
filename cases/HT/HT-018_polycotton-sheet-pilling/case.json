@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-018",
+  "legacyId": null,
+  "title": "涤棉床单套件洗后起球",
+  "summary": "纱厂未经通知把低起球涤纶短纤换成常规涤纶并降低捻系数，床单洗后起球 2.0 级。已包装 18,000 套去标降级，半制品转作袋布，其余重新纺纱织造；纤维与捻度列为面料规格锁定参数。",
+  "domain": "home-textile",
+  "product": "涤棉床单套件",
+  "stage": "production",
+  "caseType": "incident",
+  "failureModes": [
+    "pilling"
+  ],
+  "disciplines": [
+    "raw-material",
+    "sourcing",
+    "lab"
+  ],
+  "tools": [
+    "8D",
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D3512",
+    "AATCC-135"
+  ],
+  "regulations": [
+    "FTC-303"
+  ],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": {
+    "quantity": 60000,
+    "unit": "套",
+    "fobUsd": 14
+  },
+  "metrics": [
+    {
+      "metric": "pilling-grade",
+      "before": 2.0,
+      "after": 3.5,
+      "target": 3.5,
+      "headline": true,
+      "note": "ASTM D3512 乱翻式 30 min，按 AATCC 135 家庭洗涤 5 次后；改进后为新纱首 6 个面料批的最低值"
+    }
+  ],
+  "ledger": {
+    "basis": "实际成本",
+    "items": [
+      [
+        "已包装 18,000 套去标降级（FOB 扣除约 35% 残值）",
+        163800
+      ],
+      [
+        "半制品 162,500 m 转作袋布的差价（按 $0.95/m 的 45%）",
+        69469
+      ],
+      [
+        "延期交付折让（42,000 套 FOB 的 5%）",
+        29400
+      ],
+      [
+        "测试、对比试纺与重新验货（实际支出）",
+        6500
+      ]
+    ],
+    "totalUsd": 269169,
+    "allocation": "面料供应合同约定未经书面同意不得变更纤维规格，降级损失与半制品差价由面料厂（含纺纱）承担；延期折让与测试费由面料厂与床品工厂各半，床品工厂来料检验未测起球"
+  },
+  "disposition": [
+    {
+      "scope": "已包装待出运",
+      "quantity": 18000,
+      "unit": "套",
+      "decision": "downgrade",
+      "rationale": "起球来自纤维与纱线结构，成品不能烧毛或剪毛；在留样上试加抗起球整理只到 2.5–3.0 级。经客户书面同意去除品牌标识，以无品牌产品售给折扣渠道，按 16 CFR 303 重新标示纤维成分、原产国与经销商身份"
+    },
+    {
+      "scope": "已漂白待印花的半制品",
+      "quantity": 162500,
+      "unit": "m",
+      "decision": "redeploy",
+      "rationale": "尚未印客户花型，面料厂转作对起球无要求的袋布用布，按实际成分与规格销售"
+    }
+  ],
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

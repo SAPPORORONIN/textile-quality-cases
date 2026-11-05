@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-012",
+  "legacyId": null,
+  "title": "涤纶塔夫绸里布降本结构接缝滑移产前拦截",
+  "summary": "面料厂降本方案把纬密由 88 降到 76 根/in 并加有机硅柔软剂，里布接缝 6 mm 开口载荷只有 9.5 lbf。产前对比纬密与整理方式，采用 90 根/in 加防滑整理，开口载荷 18.0 lbf，复测撕破强力后通过门禁。",
+  "domain": "raw-material",
+  "product": "涤纶塔夫绸里布",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "seam-slippage"
+  ],
+  "disciplines": [
+    "raw-material",
+    "lab",
+    "sourcing"
+  ],
+  "tools": [
+    "DOE"
+  ],
+  "standards": [
+    "ASTM-D1683",
+    "ASTM-D3775",
+    "ASTM-D1424",
+    "AATCC-112"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "seam-opening-load-lbf",
+      "before": 9.5,
+      "after": 18.0,
+      "target": 15,
+      "headline": true,
+      "note": "ASTM D1683，301 线迹 12 SPI，接缝平行于纬向、沿经向加载（弱向），5 个试样均值"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

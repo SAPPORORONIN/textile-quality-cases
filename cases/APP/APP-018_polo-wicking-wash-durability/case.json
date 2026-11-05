@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "id": "APP-018",
+  "legacyId": null,
+  "title": "涤纶速干 Polo 衫吸水性洗后衰减",
+  "summary": "亲水整理剂由染色同浴吸尽改为定形机浸轧，并在同浴加入氨基有机硅柔软剂，洗 10 次后吸水时间升至 33 s（不合格批均值）。恢复同浴吸尽、改用亲水改性有机硅并锁定工艺卡后，批均值降到 3.5 s。",
+  "domain": "apparel",
+  "product": "男式涤纶速干 Polo 衫",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "absorbency"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "raw-material",
+    "lab"
+  ],
+  "tools": [
+    "DOE",
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-79",
+    "AATCC-135"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "absorbency-s",
+      "before": 33,
+      "after": 3.5,
+      "target": 5,
+      "headline": true,
+      "note": "AATCC 79，按 AATCC 135 家庭洗涤 10 次后；改进前为新工艺 20 个不合格批均值，改进后为其后 24 批均值"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

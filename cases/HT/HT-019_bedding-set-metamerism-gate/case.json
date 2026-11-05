@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 2,
+  "id": "HT-019",
+  "legacyId": null,
+  "title": "棉缎被套与涤纶丝绒抱枕套配套同色异谱产前拦截",
+  "summary": "棉用活性染料与涤纶用分散染料只在 D65 下对色，配套件之间 MI 2.6，门店灯下明显不配。产前按光谱形状重新配方，MI 降到 0.7 并复测牢度；混纤维配套件的批样增加部件间 MI 与三光源目视门禁。",
+  "domain": "home-textile",
+  "product": "床品配套套件（棉缎被套 + 涤纶丝绒抱枕套）",
+  "stage": "development",
+  "caseType": "gate",
+  "failureModes": [
+    "metamerism"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "lab",
+    "design-pdd"
+  ],
+  "tools": [
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-EP6",
+    "AATCC-EP9",
+    "AATCC-173",
+    "AATCC-16.3",
+    "AATCC-61"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "metamerism-index",
+      "before": 2.6,
+      "after": 0.7,
+      "target": 1.0,
+      "headline": true,
+      "note": "丝绒抱枕套对棉缎被套，客户方法：参照光源 D65、试验光源 TL84，10° 观察者"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

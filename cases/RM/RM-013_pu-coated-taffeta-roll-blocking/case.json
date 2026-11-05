@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "id": "RM-013",
+  "legacyId": null,
+  "title": "PU 涂层锦纶塔夫绸卷装粘连",
+  "summary": "烘箱排风阀检修后全开，末区布面温度比设定低约 22 ℃，叠加交联剂手工加料波动，涂层交联不足，卷装粘连批次中位数 2 级。锁定排风阀并每周测温、交联剂改计量泵、收卷前冷却，40 批中 37 批达到 4 级以上。",
+  "domain": "raw-material",
+  "product": "PU 涂层锦纶塔夫绸面料",
+  "stage": "production",
+  "caseType": "ci",
+  "failureModes": [
+    "blocking"
+  ],
+  "disciplines": [
+    "dyeing-finishing",
+    "lab"
+  ],
+  "tools": [
+    "SPC",
+    "DOE",
+    "PDCA"
+  ],
+  "standards": [
+    "AATCC-127"
+  ],
+  "regulations": [],
+  "historicalRegulations": [],
+  "market": "US",
+  "provenance": "illustrative",
+  "order": null,
+  "metrics": [
+    {
+      "metric": "blocking-grade",
+      "before": 2,
+      "after": 4,
+      "target": 4,
+      "headline": true,
+      "note": "客户卷装模拟方法（5 cm × 5 cm 试样，涂层面对背面，加压 5 kg 约 20 kPa，50 ℃ / 24 h），涂层批中位数；改进前 30 批、改进后 40 批"
+    }
+  ],
+  "ledger": null,
+  "disposition": null,
+  "headlineText": null,
+  "review": {
+    "status": "draft",
+    "technicalReviewer": null,
+    "complianceReviewer": null,
+    "reviewedAt": null,
+    "notes": "自动循环第 1 轮生成，已经独立审计（audits/AUDIT-20261105-loop01.md），待指定评审人按 GOV-01 评审"
+  },
+  "version": "1.0.0",
+  "updatedAt": "2026-11-05"
+}

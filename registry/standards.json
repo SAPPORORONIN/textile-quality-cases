@@ -47,6 +47,7 @@
     "ASTM-D2244": { "org": "ASTM", "code": "D2244", "title": "仪器色差计算", "kind": "practice", "status": "active", "verifiedAt": null },
     "ASTM-D3938": { "org": "ASTM", "code": "D3938", "title": "确定与确认护理指令的指南", "kind": "guide", "status": "active", "verifiedAt": null },
     "ASTM-D3776": { "org": "ASTM", "code": "D3776", "title": "织物单位面积质量（克重）", "kind": "test-method", "status": "active", "verifiedAt": null },
+    "ASTM-D204": { "org": "ASTM", "code": "D204", "title": "缝纫线试验方法", "kind": "test-method", "status": "active", "notes": "Standard Test Methods for Sewing Threads；本库用于缝纫线线密度与单纱断裂强力。现行版本与条款号待核实", "verifiedAt": null },
     "ASTM-D7842": { "org": "ASTM", "code": "D7842", "title": "纽扣附着强力测试", "kind": "test-method", "status": "active", "verifiedAt": null },
     "ASTM-D5585": { "org": "ASTM", "code": "D5585", "title": "成年女性体型尺寸（标准表）", "kind": "specification", "status": "active", "notes": "用于放码和量度标准化参考，不是强制标准", "verifiedAt": null },
     "ASTM-D5430": { "org": "ASTM", "code": "D5430", "title": "织物目视检验与评分（四分制）", "kind": "test-method", "status": "active", "notes": "破洞 ≤ 1 in 扣 2 分，> 1 in 扣 4 分", "verifiedAt": null },

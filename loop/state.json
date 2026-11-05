@@ -1,6 +1,30 @@
 {
-  "roundsCompleted": 0,
-  "rotationIndex": 0,
-  "lock": { "startedAt": "2026-11-05T00:36:45Z", "round": 1 },
-  "history": []
+  "roundsCompleted": 1,
+  "rotationIndex": 1,
+  "lock": null,
+  "history": [
+    {
+      "round": 1,
+      "date": "2026-11-05",
+      "cases": [
+        "APP-018",
+        "HT-018",
+        "HT-019",
+        "HT-020",
+        "RM-011",
+        "RM-012",
+        "RM-013"
+      ],
+      "dropped": [
+        "APP-019"
+      ],
+      "audit": "AUDIT-20261105-loop01.md",
+      "findings": {
+        "critical": 0,
+        "major": 3,
+        "minor": 21,
+        "observation": 7
+      }
+    }
+  ]
 }
