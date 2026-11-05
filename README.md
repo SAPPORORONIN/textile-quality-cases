@@ -32,8 +32,9 @@ npm test
 | `frameworks/` | 质量架构论（成熟度模型、COQ、供应商架构、数据架构） | 是 |
 | `interview/` | 高频问答、冲突情景（STAR 索引由构建生成） | 是 |
 | `templates/` | 新案例模板、评审记录模板 | 是 |
-| `scripts/` | 校验器、构建脚本、校验器自测 | 是 |
-| `audits/` | 独立审计报告存档 | 由 `/audit-cases` 生成，不删除 |
+| `scripts/` | 校验器、构建脚本、校验器自测、英文版检查（`check-en.mjs`）、覆盖情况（`coverage.mjs`） | 是 |
+| `audits/` | 独立审计报告存档 | 由 `/audit-cases` 或自动循环生成，不删除 |
+| `loop/` | 自动扩充循环：单轮规程、审计员指令、参数、进度与日志（见 [loop/README.md](loop/README.md)） | 规程与参数手工维护；进度与日志由循环写入 |
 | `.claude/agents/case-auditor.md` | 独立审计代理定义 | 是 |
 | `.claude/commands/audit-cases.md` | `/audit-cases` 命令 | 是 |
 | `site/` + `index.html` | 数据驱动的浏览站点，不写死任何内容 | 是 |

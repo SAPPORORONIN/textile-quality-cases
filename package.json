@@ -8,6 +8,8 @@
     "validate": "node scripts/validate.mjs",
     "build": "node scripts/validate.mjs && node scripts/build.mjs",
     "build:force": "node scripts/build.mjs",
-    "test": "node scripts/selftest.mjs"
+    "test": "node scripts/selftest.mjs",
+    "check:en": "node scripts/check-en.mjs",
+    "coverage": "node scripts/coverage.mjs"
   }
 }

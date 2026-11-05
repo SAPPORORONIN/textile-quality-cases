@@ -1,0 +1,13 @@
+{
+  "notes": "自动扩充循环的参数。改这里即可调整，下一轮生效。说明见 loop/README.md。",
+  "casesPerRound": 8,
+  "domainRotation": ["apparel", "home-textile", "raw-material"],
+  "domainSplitNote": "每轮 8 个按 3/3/2 分给三个领域；得 2 个的领域按 domainRotation 轮换，长期比例 1:1:1。不新增 systemic 案例。",
+  "caseTypeMix": { "incident": 3, "gate": 2, "ci": 3 },
+  "maxRounds": 10,
+  "lockHours": 5,
+  "maxAuditPasses": 2,
+  "repo": "https://github.com/SAPPORORONIN/textile-quality-cases",
+  "branch": "main",
+  "triggerId": null
+}
